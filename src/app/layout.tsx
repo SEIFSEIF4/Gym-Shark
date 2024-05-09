@@ -5,6 +5,7 @@ import { Toaster } from "react-hot-toast";
 
 import { cn } from "@/lib/utils";
 import { Providers } from "@/components/providers";
+import { Navbar } from "@nextui-org/react";
 
 export const metadata: Metadata = {
   title: "Gym Shark",
@@ -28,7 +29,7 @@ export default function RootLayout({
           themeProps={{ attribute: "class", defaultTheme: "system", children }}
         >
           <main className="max-w-screen-7xl">
-            {/* <Navbar /> */}
+            <Navbar />
             {children}
           </main>
           <Toaster />

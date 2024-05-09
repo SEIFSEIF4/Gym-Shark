@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 const { fontFamily } = require("tailwindcss/defaultTheme");
 const { nextui } = require("@nextui-org/react");
+const plugin = require("tailwindcss/plugin");
 
 const config = {
   darkMode: ["class"],
@@ -77,10 +78,47 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        fadeIn: "fadeIn .3s ease-in-out",
+        carousel: "marquee 60s linear infinite",
+        blink: "blink 1.4s both infinite",
+      },
+      fadeIn: {
+        from: { opacity: 0 },
+        to: { opacity: 1 },
+      },
+      marquee: {
+        "0%": { transform: "translateX(0%)" },
+        "100%": { transform: "translateX(-100%)" },
+      },
+      blink: {
+        "0%": { opacity: 0.2 },
+        "20%": { opacity: 1 },
+        "100% ": { opacity: 0.2 },
+      },
+      future: {
+        hoverOnlyWhenSupported: true,
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), nextui()],
+  plugins: [
+    nextui(),
+    require("@tailwindcss/container-queries"),
+    require("@tailwindcss/typography"),
+    plugin(({ matchUtilities, theme }: any) => {
+      matchUtilities(
+        {
+          "animation-delay": (value: any) => {
+            return {
+              "animation-delay": value,
+            };
+          },
+        },
+        {
+          values: theme("transitionDelay"),
+        }
+      );
+    }),
+  ],
 } satisfies Config;
 
 export default config;
