@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
-import { fontSans, cairo } from "@/config/fonts";
+import { Inter as FontSans } from "next/font/google";
 import "@/styles/globals.css";
 import { Toaster } from "react-hot-toast";
 
 import { cn } from "@/lib/utils";
 import { Providers } from "@/components/providers";
-import { Navbar } from "@nextui-org/react";
+import Navbar from "@/components/Navbar";
+import CartProvider from "@/components/CartProvider";
+import ShoppingCartModal from "@/components/ShoppingCartModal";
+
+const fontSans = FontSans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
 
 export const metadata: Metadata = {
   title: "Gym Shark",
@@ -28,11 +35,12 @@ export default function RootLayout({
         <Providers
           themeProps={{ attribute: "class", defaultTheme: "system", children }}
         >
-          <main className="max-w-screen-7xl">
+          <CartProvider>
             <Navbar />
-            {children}
-          </main>
-          <Toaster />
+            <main className="max-w-screen-7xl">{children}</main>
+            <ShoppingCartModal />
+            <Toaster />
+          </CartProvider>
         </Providers>
       </body>
     </html>
