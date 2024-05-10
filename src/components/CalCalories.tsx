@@ -1,7 +1,7 @@
-"use client"
+"use client";
 import React, { useState } from 'react';
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
-import { Button } from "@/components/ui/button"
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -9,21 +9,20 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
+} from "@/components/ui/select";
 import CaloriesResult from './CaloriesResult';
 
 export default function CalCalories() {
-  const [Male, setMale] = useState('option-one');
-  const [Female, setFemale] = useState('option-two');
+  const [gender, setGender] = useState('option-one');
   const [Age, setAge] = useState('');
   const [height, setHeight] = useState('');
   const [weight, setWeight] = useState('');
@@ -32,12 +31,36 @@ export default function CalCalories() {
 
   const handleCalculate = () => {
     let bmr = 0;
-    if (Male === 'option-one') { // Male
+    if (gender === 'option-one') { // Male
       bmr = 88.362 + (13.397 * parseFloat(weight)) + (4.799 * parseFloat(height)) - (5.677 * parseFloat(Age));
     } else { // Female
       bmr = 447.593 + (9.247 * parseFloat(weight)) + (3.098 * parseFloat(height)) - (4.330 * parseFloat(Age));
     }
-    setResult(bmr);
+
+    // Adjust the result based on activity level
+    switch (activity) {
+      case 'Sedentary':
+        setResult(bmr);
+        break;
+      case 'Light':
+        setResult(bmr + 0.15 * bmr);
+        break;
+      case 'Active':
+        setResult(bmr + 0.22 * bmr);
+        break;
+      case 'Moderate':
+        setResult(bmr + 0.29 * bmr);
+        break;
+      case 'VeryActive':
+        setResult(bmr + 0.38 * bmr);
+        break;
+      case 'Extra':
+        setResult(bmr + 0.45 * bmr);
+        break;
+      default:
+        setResult(bmr);
+        break;
+    }
   };
 
   const handleClear = () => {
@@ -58,14 +81,12 @@ export default function CalCalories() {
         </CardHeader>
         <CardContent>
           <div className="flex flex-col gap-3">
-            <div>
             <div className="flex flex-col space-y-1.5">
-                  <Label htmlFor="Age">Age</Label>
-                  <Input id="Age" placeholder="Enter your Age" value={Age} onChange={(e) => setAge(e.target.value)} />
-                </div>
+              <Label htmlFor="Age">Age</Label>
+              <Input id="Age" placeholder="Enter your Age" value={Age} onChange={(e) => setAge(e.target.value)} />
             </div>
-            <h1>Gender: </h1>
-            <RadioGroup onChange={(e) => setMale((e.target as HTMLInputElement).value)}>
+            <h1>Gender:</h1>
+            <RadioGroup onChange={(e) => setGender((e.target as HTMLInputElement).value)}>
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="option-one" id="option-one" />
                 <Label htmlFor="option-one">Male</Label>
