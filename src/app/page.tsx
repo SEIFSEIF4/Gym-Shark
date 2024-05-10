@@ -1,10 +1,11 @@
-import { ModeToggle } from "@/components/ui/mode-toggle";
+import Hero from "@/components/Hero";
+import Newest from "@/components/Newest";
 
 export default function Home() {
   return (
-    <div>
-      Gym Shark
-      <ModeToggle />
+    <div className="pb-6 sm:pb-8 lg:pb-12">
+      <Hero />
+      <Newest />
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import type { Config } from "tailwindcss";
 const { fontFamily } = require("tailwindcss/defaultTheme");
 const { nextui } = require("@nextui-org/react");
-const plugin = require("tailwindcss/plugin");
 
 const config = {
   darkMode: ["class"],
@@ -100,25 +99,7 @@ const config = {
       },
     },
   },
-  plugins: [
-    nextui(),
-    require("@tailwindcss/container-queries"),
-    require("@tailwindcss/typography"),
-    plugin(({ matchUtilities, theme }: any) => {
-      matchUtilities(
-        {
-          "animation-delay": (value: any) => {
-            return {
-              "animation-delay": value,
-            };
-          },
-        },
-        {
-          values: theme("transitionDelay"),
-        }
-      );
-    }),
-  ],
+  plugins: [require("tailwindcss-animate"), nextui()],
 } satisfies Config;
 
 export default config;
