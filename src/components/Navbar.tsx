@@ -9,9 +9,9 @@ import { ModeToggle } from "./ui/mode-toggle";
 
 const links = [
   { name: "Home", href: "/" },
-  { name: "Supplements", href: "/Men" },
-  { name: "accessories", href: "/Women" },
-  { name: "Equipments", href: "/Teens" },
+  { name: "Supplements", href: "/Supplements" },
+  { name: "Accessories", href: "/Accessories" },
+  { name: "Equipments", href: "/Equipments" },
 ];
 
 export default function Navbar() {
