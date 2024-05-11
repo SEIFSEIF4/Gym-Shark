@@ -5,10 +5,12 @@ import CardioExercisesHeader from "./CardioExercisesHeader";
 
 export default function CardioExercisesPage() {
   return (
-    <div className="max-w-7xl flex flex-col m-auto mt-10">
+    <div className="w-4/6 flex flex-col m-auto mt-10">
       <CardioExercisesHeader />
-      <ExercisesList />
-      <CardioExercisesComponent />
+      <div className="flex flex-col lg:flex-row gap-4 mt-5 w-11/12">
+        <ExercisesList />
+        <CardioExercisesComponent />
+      </div>
     </div>
   );
 }
