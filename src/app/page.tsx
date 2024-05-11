@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/sections/Hero";
 import { ModeToggle } from "@/components/ui/mode-toggle";
 import MealPlan from "@/components/MealPlans";
+import MainNavbar from "@/components/MainNavbar";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
     // </div>
 
     <div>
+      <MainNavbar />
       <MealPlan />
     </div>
   );
