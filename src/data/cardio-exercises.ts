@@ -4,6 +4,13 @@ export const Exercises = [
     url: "/cardio/Frog-jumps",
     videoLink: "https://www.youtube.com/embed/1HXEiJBMdPE?si=j4mBdSTMzmRVOiE8",
     text: "Frog jumps are an advanced high-intensity cardio exercise that gets your heart rate up quickly using low-body power and endurance.",
+    steps:[
+      "Place your feet about hip-width apart, and squat low enough that you can put your hands on the floor in front of you.",
+      "Explode and jump up, using your glutes, quads, and hamstrings to generate power.",
+      "Tap your heels together as you jump and take the hands behind your head or up in the air.",
+      "Land with bent knees to protect your joints and get into your squat to prepare for the next jump.",
+      "Repeat 10 to 20 frog jumps. Rest and repeat if desired.",
+    ],
   },
   {
     exName: "Burpees",
@@ -112,5 +119,12 @@ export const Exercises = [
     url: "/cardio/Pendulum-Lunge",
     videoLink: "https://www.youtube.com/embed/Hn9zUpS-fJA?si=3A_3SKwpt6SqH5zh&amp;clip=UgkxIQNfXuPi5pdZ1hDEdwF1VzxnRsOYfoQt&amp;clipt=EKTvBhiExAo",
     text: "The Pendulum Lunge is a dynamic leg exercise involving stepping into a lunge and swinging the back leg forward into a kick before returning. It targets multiple leg muscles and improves balance.",
+    // steps:[
+    //   "Start in a standing position with feet hip-width apart.",
+    //   "Step forward into a lunge, ensuring proper alignment of front knee and back knee.",
+    //   "Swing back leg forward into a front kick position.",
+    //   "Return to lunge position with back leg behind.",
+    //   "Push through front heel to return to standing. Repeat on alternate sides.",
+    // ],
   },
 ];
