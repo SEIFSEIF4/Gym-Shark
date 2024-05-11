@@ -32,6 +32,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import Link from "next/link";
+import { activityLevel } from "@/lib/constants";
 
 const calcFormSchema = z.object({
   Age: z.preprocess(
@@ -96,8 +97,8 @@ export default function CalCaloriesForm() {
       bmr =
         447.593 + 9.247 * data.weight + 3.098 * data.height - 4.33 * data.Age;
     }
-    setResult(bmr);
-    console.log(data);
+    const activity = activityLevel[data.activity];
+    setResult(parseFloat((bmr * activity).toFixed(2)));
   };
 
   const [Result, setResult] = useState<number>(0);
