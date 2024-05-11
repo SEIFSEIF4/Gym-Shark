@@ -2,7 +2,8 @@ export const Exercises = [
   {
     exName: "Frog jumps",
     url: "/cardio/Frog-jumps",
-    videoLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    videoLink:
+      "https://www.youtube.com/embed/X4Lqkmo28wY?si=lBW9aW-GH0-llyq0&amp;clip=UgkxwvGlY6k4F0cJKhSZ3GQ08WSGPGwie-VT&amp;clipt=EI7yBRjtxgk",
     text: "Description for exercise 1",
   },
   {
