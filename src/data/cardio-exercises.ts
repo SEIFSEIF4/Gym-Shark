@@ -187,6 +187,8 @@ export const Exercises = [
     url: "/cardio/Jump-Lunge-to-Jump-Squat",
     videoLink:
       "https://www.youtube.com/embed/0VfCpXJQRYg?si=RHOtIZKXsaPMqMo5&amp;clip=Ugkx44K9cB66e4dNvk7YbNYttHx90Niexh6j&amp;clipt=EOy_DxjjghM",
+    thumbnail:
+      "https://media.istockphoto.com/id/1131508527/vector/exercise-guide-by-woman-doing-squat-jump-in-3-steps-in-side-view.jpg?s=612x612&w=0&k=20&c=08_5RXKlcd-R8OiX-cO7DYmSNJ2ubY4JZO-2JgmPklw=",
     text: "The Jump Lunge to Jump Squat is a dynamic combo that targets your legs and boosts cardio fitness. Start with alternating jump lunges, then transition into jump squats for a powerful lower-body workout.",
     steps: [
       "Start in a standing position with your feet hip-width apart.",
@@ -201,6 +203,8 @@ export const Exercises = [
     url: "/cardio/Plusing-Side-Plank",
     videoLink:
       "https://www.youtube.com/embed/0VfCpXJQRYg?si=GxeJZj3dH0KsKj3Q&amp;clip=UgkxFQ-ctB_cuUbajcHHJm-R8Xnmlk5c62-u&amp;clipt=EMXnFhjJkxo",
+    thumbnail:
+      "https://media.istockphoto.com/id/1329779688/vector/woman-and-man-in-side-plank-pose-yogi-couple-in-vasisthasana-isolated-in-white-background.jpg?s=612x612&w=0&k=20&c=4c1tXEnas7ztwXf7FzpZI0Suke4Uxg4u5q_1S32ZR94=",
     text: "The Plank Side Pulse is a challenging core exercise that involves balancing on one forearm and the side of your feet while pulsing your hips up and down slightly. This move targets your obliques and improves core stability and strength.",
     steps: [
       "Start by lying on your side with your forearm on the ground and your elbow directly below your shoulder.",
@@ -228,6 +232,8 @@ export const Exercises = [
     url: "/cardio/Burpees",
     videoLink:
       "https://www.youtube.com/embed/yYQL2uNmwlo?si=c4HIxRzE0mKfoSLb&amp;clip=UgkxfB83vn69nXLJoISzMoh6LsI1mYBeeGmT&amp;clipt=ENGvARixhAU",
+    thumbnail:
+      "https://as1.ftcdn.net/v2/jpg/04/23/35/22/1000_F_423352288_85sBcV9m59glgQtdmAbfd24aPINSixnh.jpg",
     text: "Burpees are an exercise some of us may remember vividly from high school gym​ class. This full-body cardio exercise is memorable because it gets the heart rate up quickly.",
     steps: [
       "Start in a standing position with feet shoulder-width apart.",
@@ -242,6 +248,8 @@ export const Exercises = [
     url: "/cardio/Star-Jump",
     videoLink:
       "https://www.youtube.com/embed/5AcCoxTIPqE?si=axW3BsxuVLkYOVqn&amp;clip=Ugkx2KlGrDf-YRmm-zF_QQQjIXGa9V056ppK&amp;clipt=ENeYARi5mQQ",
+    thumbnail:
+      "https://media.istockphoto.com/id/1321409504/vector/guy-doing-jumping-jacks-home-workout-exercise-diagram-athletic-man-star-jumps-fitness.jpg?s=612x612&w=0&k=20&c=B4bqkIuCQJ5liPU8aoMUBocc60-nKuO03IgDOA7rII0=",
     text: "The Star Jump is a dynamic plyometric exercise where you jump explosively, spreading your arms and legs out like a star. It works multiple muscles and boosts cardiovascular endurance.",
     steps: [
       "Start in a standing position with your feet together and arms at your sides.",
@@ -256,6 +264,8 @@ export const Exercises = [
     url: "/cardio/Pendulum-Lunge",
     videoLink:
       "https://www.youtube.com/embed/Hn9zUpS-fJA?si=3A_3SKwpt6SqH5zh&amp;clip=UgkxIQNfXuPi5pdZ1hDEdwF1VzxnRsOYfoQt&amp;clipt=EKTvBhiExAo",
+    thumbnail:
+      "https://img.freepik.com/premium-vector/alternating-side-lunge-exercise-woman-workout-fitness-aerobic-exercises_476141-1541.jpg",
     text: "The Pendulum Lunge is a dynamic leg exercise involving stepping into a lunge and swinging the back leg forward into a kick before returning. It targets multiple leg muscles and improves balance.",
     steps: [
       "Start in a standing position with feet hip-width apart.",
