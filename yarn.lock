@@ -365,7 +365,7 @@
     lodash.debounce "^4.0.8"
     scroll-into-view-if-needed "3.0.10"
 
-"@nextui-org/card@2.0.28":
+"@nextui-org/card@^2.0.28", "@nextui-org/card@2.0.28":
   version "2.0.28"
   resolved "https://registry.npmjs.org/@nextui-org/card/-/card-2.0.28.tgz"
   integrity sha512-Vwa7Poi1kxqjnTWQS9FAGlQw301RqkMlY5cnYQCGeKNbFX+y6u1MlqTSi8ed6RqmdjO23j1zG2+XlBieFyJ9Mg==
