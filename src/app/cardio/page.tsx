@@ -11,7 +11,14 @@ export default function Cardio() {
         <Card shadow="md" key={index}>
           <CardBody className="overflow-visible p-0">
             <Suspense fallback={<p>Loading video...</p>}>
-              <IFrame src={item.videoLink} title={item.exName} />
+            <Image
+              shadow="sm"
+              radius="lg"
+              width="100%"
+              alt={item.exName}
+              className="w-full object-cover h-[250px]"
+              src={item.thumbnail}
+            />
             </Suspense>
           </CardBody>
           <CardFooter className="text-small flex-col gap-1 ">
