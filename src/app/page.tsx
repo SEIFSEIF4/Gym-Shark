@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       <Navbar />
       <Hero />
-      <div className="py-24">
+      <div className="md:py-8">
         <CalCalories />
       </div>
     </div>
