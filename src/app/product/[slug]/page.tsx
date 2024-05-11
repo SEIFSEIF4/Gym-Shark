@@ -11,14 +11,10 @@ export default async function ProductPage({
   params: { slug: string };
 }) {
   const data = mainProducts.find((product) => product.slug === params.slug);
-
-  console.log(data);
-  console.log(params.slug);
-  console.log(data?.slug);
   return (
     <>
       {data === undefined ? (
-        <div className="">no data</div>
+        <div className="text-9xl text-center">no data</div>
       ) : (
         <div className="bg-white">
           <div className="mx-auto max-w-screen-xl px-4 md:px-8">

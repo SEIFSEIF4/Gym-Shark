@@ -16,7 +16,9 @@ export default function ExercisesList() {
           {Exercises.map((item, index) => (
             <li
               key={index}
-              className={`text-lg ${pathname === item.url ? "text-white" : ""}`}
+              className={`text-md md:text-lg ${
+                pathname === item.url ? "text-white" : ""
+              }`}
             >
               <Link
                 href={item.url}

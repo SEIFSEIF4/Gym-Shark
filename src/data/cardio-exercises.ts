@@ -3,6 +3,7 @@ export const Exercises = [
     exName: "Mountain climbers",
     url: "/cardio/Mountain-climbers",
     videoLink: "https://www.youtube.com/embed/hq_0YlyfqGM?si=nAYtyX7LQbLWaqEo",
+    thumbnail: "https://i.ytimg.com/vi/hq_0YlyfqGM/hqdefault.jpg",
     text: "Mountain climbers are an advanced, high-intensity cardio exercise that raises your heart rate and adds intensity to your workouts. This move will build leg endurance and help your agility, making it a great overall exercise.",
     steps: [
       "Start in a plank position with your hands directly under your shoulders.",
@@ -17,6 +18,7 @@ export const Exercises = [
     url: "/cardio/Squat-jumps",
     videoLink:
       "https://www.youtube.com/embed/cAINihyvQzc?si=mTw2tjSqDUQuao2v&amp;clip=Ugkxnspd8geGLR_iAly3W-56bQ_Lid12i8_X&amp;clipt=EJ6LBxj-3wo",
+    thumbanil: "https://i.ytimg.com/vi/cAINihyvQzc/maxresdefault.jpg",
     text: "Squat jumps are a great way to add intensity to your workouts and raise your heart rate.5 Add this cardio exercise to the end of your regular workouts for a boost or perform them in between sets during resistance training.",
     steps: [
       "Start in a standing position with your feet hip-width apart.",
@@ -31,6 +33,7 @@ export const Exercises = [
     url: "/cardio/Jumping-jacks",
     videoLink:
       "https://www.youtube.com/embed/sUFZZ8tuGgA?si=7pMGOH3szEm2W6UT&amp;clip=UgkxAnVKmyeLF46C_Vi6BIYp1IFYIa3hCMHP&amp;clipt=EMChARig9gQ",
+    thumbnail: "https://i.ytimg.com/vi/sUFZZ8tuGgA/maxresdefault.jpg",
     text: "Jumping jacks are a versatile cardio exercise, ideal for spicing up workouts or boosting heart rate between sets in resistance training. They engage various muscles, enhancing cardiovascular endurance and overall fitness.",
     steps: [
       "Start in a standing position with your feet together and arms at your sides.",
