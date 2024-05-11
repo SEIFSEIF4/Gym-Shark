@@ -83,7 +83,7 @@ export default function CalCaloriesForm() {
 
   const form = useForm<CalcFormSchema>({
     resolver: zodResolver(calcFormSchema),
-    defaultValues,
+    // defaultValues,
   });
 
   const onSubmit = (data: CalcFormSchema) => {
@@ -98,23 +98,24 @@ export default function CalCaloriesForm() {
         447.593 + 9.247 * data.weight + 3.098 * data.height - 4.33 * data.Age;
     }
     const activity = activityLevel[data.activity];
-    setResult(parseFloat((bmr * activity).toFixed(2)));
+    setResult(Math.round(bmr * activity));
   };
 
   const [Result, setResult] = useState<number>(0);
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-        <div className="flex flex-col gap-5 md:flex-row justify-center items-center">
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        className="space-y-8 animate-appearance-in"
+      >
+        <div className="flex flex-col gap-5 md:flex-row justify-center items-center p-3">
           <Card className="w-[450px]">
             <CardHeader>
               <CardTitle>Calorie Calculator</CardTitle>
               <CardDescription>
                 The Calorie Calculator can be used to estimate the number of
-                calories a person needs to consume each day. This calculator can
-                also provide some simple guidelines for gaining or losing
-                weight.
+                calories a person needs to consume each day.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -142,53 +143,50 @@ export default function CalCaloriesForm() {
                     )}
                   />
                 </div>
-                <div className=" flex flex-row w-full justify-between py-2">
-                  <FormField
-                    control={form.control}
-                    name="gender"
-                    render={({ field }) => (
-                      <FormItem className="space-y-3">
-                        <FormLabel>Gender:</FormLabel>
-                        <FormControl>
-                          <RadioGroup
-                            onValueChange={field.onChange}
-                            defaultValue={field.value}
-                            className="flex flex-col space-y-1"
-                          >
-                            <FormItem className="flex items-center space-x-3 space-y-0">
-                              <FormControl>
-                                <RadioGroupItem value="male" />
-                              </FormControl>
-                              <FormLabel className="font-normal">
-                                Male
-                              </FormLabel>
-                            </FormItem>
-                            <FormItem className="flex items-center space-x-3 space-y-0">
-                              <FormControl>
-                                <RadioGroupItem value="female" />
-                              </FormControl>
-                              <FormLabel className="font-normal">
-                                Female
-                              </FormLabel>
-                            </FormItem>
-                          </RadioGroup>
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                </div>
+                <FormField
+                  control={form.control}
+                  name="gender"
+                  render={({ field }) => (
+                    <FormItem className="flex flex-row w-full items-center justify-between py-2">
+                      <FormLabel>Gender</FormLabel>
+                      <FormControl>
+                        <RadioGroup
+                          onValueChange={field.onChange}
+                          defaultValue={field.value}
+                          className="flex flex-row "
+                        >
+                          <FormItem className="flex items-center space-x-3 space-y-0">
+                            <FormControl>
+                              <RadioGroupItem value="male" />
+                            </FormControl>
+                            <FormLabel className="font-normal">Male</FormLabel>
+                          </FormItem>
+                          <FormItem className="flex items-center space-x-3 space-y-0">
+                            <FormControl>
+                              <RadioGroupItem value="female" />
+                            </FormControl>
+                            <FormLabel className="font-normal">
+                              Female
+                            </FormLabel>
+                          </FormItem>
+                        </RadioGroup>
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
               </div>
+
               <div>
                 <div className="flex flex-col w-full gap-4 mt-3">
-                  <div className="flex flex-row gap-3">
-                    <div className="flex flex-col space-y-1.5 w-4/5">
-                      <div className="flex flex-row justify-between w-full">
+                  <div className="flex flex-row  justify-between">
+                    <div className="flex flex-col  space-y-1.5 w-full">
+                      <div className="flex flex-row gap-3 justify-between w-full">
                         <FormField
                           name="height"
                           control={form.control}
                           render={({ field }) => (
-                            <FormItem>
+                            <FormItem className="w-[50%]">
                               <FormLabel htmlFor="height">height</FormLabel>
                               <FormControl>
                                 <Input
@@ -197,7 +195,7 @@ export default function CalCaloriesForm() {
                                   min={20}
                                   max={300}
                                   maxLength={3}
-                                  placeholder="Enter your height"
+                                  placeholder="Enter your height (cm)"
                                   {...field}
                                 />
                               </FormControl>
@@ -209,7 +207,7 @@ export default function CalCaloriesForm() {
                           name="weight"
                           control={form.control}
                           render={({ field }) => (
-                            <FormItem>
+                            <FormItem className="w-[50%]">
                               <FormLabel htmlFor="Weight">Weight</FormLabel>
                               <FormControl>
                                 <Input
@@ -218,7 +216,7 @@ export default function CalCaloriesForm() {
                                   min={20}
                                   max={300}
                                   maxLength={3}
-                                  placeholder="Enter your Weight"
+                                  placeholder="Enter your Weight (kg)"
                                   {...field}
                                 />
                               </FormControl>
@@ -267,14 +265,6 @@ export default function CalCaloriesForm() {
                               </SelectItem>
                             </SelectContent>
                           </Select>
-                          <FormDescription>
-                            You can manage email addresses in your{" "}
-                            <strong>
-                              <Link href="https://youtube.com/shorts/SXHMnicI6Pg?si=Cv5VeMKDhFnHX845">
-                                Example
-                              </Link>
-                            </strong>
-                          </FormDescription>
                           <FormMessage />
                         </FormItem>
                       )}
@@ -284,8 +274,10 @@ export default function CalCaloriesForm() {
               </div>
             </CardContent>
             <CardFooter>
-              <div className="flex flex-row gap-5">
-                <Button type="submit">Calculate</Button>
+              <div className="flex flex-row gap-5 mt-3">
+                <Button type="submit" className="text-card">
+                  Calculate
+                </Button>
                 <Button onClick={() => form.reset()} className=" bg-foreground">
                   Clear
                 </Button>
@@ -293,10 +285,10 @@ export default function CalCaloriesForm() {
             </CardFooter>
           </Card>
           <CaloriesResult
-            maintainWeight={Result}
-            mildWeightLoss={Result * 0.9}
-            WeightLoss={Result * 0.79}
-            extremeWeightLoss={Result * 0.59}
+            maintainWeight={Math.round(Result)}
+            mildWeightLoss={Math.round(Result * 0.9)}
+            WeightLoss={Math.round(Result * 0.79)}
+            extremeWeightLoss={Math.round(Result * 0.59)}
           />
         </div>
       </form>

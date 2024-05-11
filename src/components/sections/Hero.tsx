@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -6,12 +7,20 @@ export default function Hero() {
       {/* Hero */}
       <div className="relative overflow-hidden pb-24 lg:py-32 duration-500 animate-in animate fade-in-5 slide-in-from-bottom-2.5">
         {/* Gradients */}
+        <Image
+          src="https://i.pinimg.com/originals/df/e3/81/dfe38133f5ff8d5252e86ee30a67f2a5.jpg"
+          alt="Picture of the author"
+          width={1234}
+          height={771}
+          layout="responsive"
+          className="absolute inset-0 z-0 object-cover w-full h-full"
+        />
         <div
           aria-hidden="true"
           className="flex absolute -top-96 start-1/2 transform -translate-x-1/2"
         >
           <div className="bg-gradient-to-r from-background/50 to-background blur-3xl w-[25rem] h-[44rem] rotate-[-60deg] transform -translate-x-[10rem]" />
-          <div className="bg-gradient-to-tl blur-3xl w-[90rem] h-[50rem] rounded-full origin-top-left -rotate-12 -translate-x-[15rem] from-primary-foreground via-primary-foreground to-background" />
+          {/* <div className="bg-gradient-to-tl blur-3xl w-[90rem] h-[50rem] rounded-full origin-top-left -rotate-12 -translate-x-[15rem] from-primary-foreground via-primary-foreground to-background" /> */}
         </div>
         {/* End Gradients */}
         <div className="relative z-10">
