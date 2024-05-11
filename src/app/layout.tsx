@@ -5,7 +5,6 @@ import { Toaster } from "react-hot-toast";
 
 import { cn } from "@/lib/utils";
 import { Providers } from "@/components/providers";
-import Navbar from "@/components/Navbar";
 import CartProvider from "@/components/CartProvider";
 import ShoppingCartModal from "@/components/ShoppingCartModal";
 
@@ -36,7 +35,6 @@ export default function RootLayout({
           themeProps={{ attribute: "class", defaultTheme: "system", children }}
         >
           <CartProvider>
-            <Navbar />
             <main className="max-w-screen-7xl">{children}</main>
             <ShoppingCartModal />
             <Toaster />
