@@ -106,7 +106,7 @@ export default function CalCaloriesForm() {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-        <div className="flex flex-col gap-4 md:flex-row">
+        <div className="flex flex-col gap-5 md:flex-row justify-center items-center">
           <Card className="w-[450px]">
             <CardHeader>
               <CardTitle>Calorie Calculator</CardTitle>
@@ -183,7 +183,7 @@ export default function CalCaloriesForm() {
                 <div className="flex flex-col w-full gap-4 mt-3">
                   <div className="flex flex-row gap-3">
                     <div className="flex flex-col space-y-1.5 w-4/5">
-                      <div className="flex flex-row justify-between">
+                      <div className="flex flex-row justify-between w-full">
                         <FormField
                           name="height"
                           control={form.control}

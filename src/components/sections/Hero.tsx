@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <>
       {/* Hero */}
-      <div className="relative overflow-hidden pb-24 lg:py-32">
+      <div className="relative overflow-hidden pb-24 lg:py-32 duration-500 animate-in animate fade-in-5 slide-in-from-bottom-2.5">
         {/* Gradients */}
         <div
           aria-hidden="true"
