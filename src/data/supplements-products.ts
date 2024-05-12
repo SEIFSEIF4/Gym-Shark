@@ -106,14 +106,14 @@ const Product7 = {
 const Product8 = {
   _id: "95",
   images: [
-    "https://www.prowheyshop.com/image/cache/catalog/urun/B%C4%B0GJOY/big_joy_citrulline_malate_300_gr_35273-1000x1000.jpeg",
-    "https://static.ticimax.cloud/9701/uploads/urunresimleri/buyuk/bigjoy-citrulline-malate-300-gr-4a3c.jpg",
+    "https://cdn.dsmcdn.com/ty1144/product/media/images/prod/SPM/PIM/20240124/12/c93884b3-4c07-357d-9375-cdeca4cbb35e/1_org_zoom.jpg",
+    "https://cdn.dsmcdn.com/ty1143/product/media/images/prod/SPM/PIM/20240124/12/5c70eeea-77cb-306b-b900-236f08684581/1_org_zoom.jpg",
   ],
-  price: 520,
-  name: "CİTRULLİNE MALATE",
-  description: "BİG JOY CİTRULLİNE MALATE 300 GR",
+  price: 669,
+  name: "Creatine Creapure",
+  description: "Creatine Creapure 250 gr",
   categoryName: "supplements",
-  slug: "CitrullineMalate",
+  slug: "CreatineCreapure",
   rate: 4.9,
   ratings: 69,
   shipping: "2-4 Day Aras Kargo Shipping",
@@ -121,8 +121,8 @@ const Product8 = {
 const Product9 = {
   _id: "96",
   images: [
-    "https://www.prowheyshop.com/image/cache/catalog/urun/B%C4%B0GJOY/big_joy_citrulline_malate_300_gr_35273-1000x1000.jpeg",
-    "https://static.ticimax.cloud/9701/uploads/urunresimleri/buyuk/bigjoy-citrulline-malate-300-gr-4a3c.jpg",
+    "https://cdn.dsmcdn.com/ty1144/product/media/images/prod/SPM/PIM/20240124/12/5efdfd3f-88d1-3cd3-9ee8-a319c1bcf9fe/1_org_zoom.jpg",
+    "https://cdn.dsmcdn.com/ty1143/product/media/images/prod/SPM/PIM/20240124/12/cd4a5e86-5567-3139-ab42-1d265e715e20/1_org_zoom.jpg",
   ],
   price: 1500,
   name: "HardLine Pro Gainer",
@@ -134,7 +134,7 @@ const Product9 = {
   shipping: "2-4 Day Aras Kargo Shipping",
 };
 
-export const SupplementsProducts = [
+export const EquipmentsProducts = [
   Product1,
   Product2,
   Product3,
