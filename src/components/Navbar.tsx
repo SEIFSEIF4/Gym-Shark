@@ -4,7 +4,6 @@ import {
 } from "@kinde-oss/kinde-auth-nextjs/components";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { useShoppingCart } from "use-shopping-cart";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import SubNavBar from "./SubNavBar";
 import ShoppingCartButton from "./ShoppingCartButton";
