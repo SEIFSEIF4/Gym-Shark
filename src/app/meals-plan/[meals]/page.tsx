@@ -1,10 +1,11 @@
+import React from "react";
+import Image from "next/image";
 import MainNavbar from "@/components/MainNavbar";
 import { ShieldCheck } from "lucide-react";
-import Image from "next/image";
-import React from "react";
 
 const SubTitleStyle = "text-xl font-bold py-3";
 const ParagraphStyle = "py-3";
+const ListStyle = "list-disc ml-5";
 
 export default function Meals({ meals }: { meals: string }) {
   return (
@@ -22,11 +23,11 @@ export default function Meals({ meals }: { meals: string }) {
           By Emily Lachtrupp, Published on May 10, 2024
         </p>
         <p className="flex flex-row py-3">
-          <ShieldCheck />
-          Reviewed by Dietitian Maria Laura Haddad-Garcia
+          <ShieldCheck className="mr-2" /> Reviewed by Dietitian Maria Laura
+          Haddad-Garcia
         </p>
       </div>
-      <div className="bg-gray-500 flex-col max-w-[50vh] flex justify-start items-start m-auto min-h-screen p-3">
+      <div className="bg-gray-500 flex-col max-w-[50vh] lg:max-w-[75vh] flex justify-start items-start m-auto min-h-screen p-3">
         <Image
           src="https://www.eatingwell.com/thmb/Cw5Gytde31-DiNC5RdUhIc9y8hc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/30-Day-No-Sugar-Low-Cholesterol-Meal-Plan-for-Beginners-743864c472fd4a088ed33ee3da6e7a9d.jpg"
           width={500}
@@ -87,7 +88,7 @@ export default function Meals({ meals }: { meals: string }) {
         <p>
           <strong>Related: </strong>
           <a
-            href="https://www.eatingwell.com/article/7913417/can-eating-more-protein-help-you-lose-weight/"
+            href="https://www.eatingwell.com/thmb/3YbpzdUovSBmut5mlmQMOT6sW7w=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/loaded-cucumber-and-avocado-sandwich-e8edb61dcc8044e28cfa835ad4282719.jpg"
             className="underline text-blue-400"
           >
             Can Eating More Protein Help You Lose Weight? Heres What the Science
@@ -97,7 +98,7 @@ export default function Meals({ meals }: { meals: string }) {
         <h2 className={SubTitleStyle}>
           High-Protein & High-Fiber Foods to Focus On
         </h2>
-        <ul className="list-disc ml-5">
+        <ul className={ListStyle}>
           <li>Soy</li>
           <li>Fish</li>
           <li>Meat</li>
@@ -112,7 +113,7 @@ export default function Meals({ meals }: { meals: string }) {
         <h2 className={SubTitleStyle}>Day 1</h2>
         <div className="">
           <Image
-            src="https://www.eatingwell.com/thmb/Cw5Gytde31-DiNC5RdUhIc9y8hc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/30-Day-No-Sugar-Low-Cholesterol-Meal-Plan-for-Beginners-743864c472fd4a088ed33ee3da6e7a9d.jpg"
+            src="https://www.eatingwell.com/thmb/3YbpzdUovSBmut5mlmQMOT6sW7w=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/loaded-cucumber-and-avocado-sandwich-e8edb61dcc8044e28cfa835ad4282719.jpg"
             width={500}
             height={500}
             className="object-cover w-full h-full"
@@ -120,24 +121,24 @@ export default function Meals({ meals }: { meals: string }) {
           />
         </div>
         <h2 className={SubTitleStyle}>Breakfast (387 calories)</h2>
-        <ul className="list-disc ml-5">
+        <ul className={ListStyle}>
           <li>1 serving Sun-Dried Tomato & Feta Egg Bites</li>
           <li>1 medium apple</li>
           <li>1 medium apple</li>
         </ul>
         <h2 className={SubTitleStyle}>A.M. Snack (141 calories)</h2>
-        <ul className="list-disc ml-5">
+        <ul className={ListStyle}>
           <li>2 servings Peanut Butter-Oat Energy Balls </li>
         </ul>
         <h2 className={SubTitleStyle}>P.M. Snack (126 calories)</h2>
-        <ul className="list-disc ml-5">
+        <ul className={ListStyle}>
           <li>
             1 (5.3-oz.) container low-fat plain strained (Greek-style) yogurt
           </li>
           <li>¼ cup raspberries</li>
         </ul>
         <h2 className={SubTitleStyle}>Dinner (443 calories)</h2>
-        <ul className="list-disc ml-5">
+        <ul className={ListStyle}>
           <li>1 serving Smoky Collards & Shrimp with Cheesy Grits</li>
         </ul>
         <p className={ParagraphStyle}>
