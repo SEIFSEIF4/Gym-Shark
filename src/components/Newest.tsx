@@ -3,7 +3,6 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { newestProducts } from "@/data/newest-products";
-import { mainProducts } from "@/data/main-products";
 
 export default async function Newest() {
   const data = newestProducts;
@@ -27,11 +26,11 @@ export default async function Newest() {
           </Link>
         </div>
 
-        <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+        <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 ">
           {data.map((product) => (
             <Link href={`store/product/${product.slug}`} key={product._id}>
               <div className="group relative hover:opacity-75">
-                <div className="aspect-square w-full overflow-hidden rounded-md bg-foreground-200  lg:h-80">
+                <div className="aspect-square w-full overflow-hidden rounded-md bg-foreground-200  lg:h-80 border-1 border-gray-500 shadow-lg">
                   <Image
                     src={product.images[0]}
                     alt="Product image"

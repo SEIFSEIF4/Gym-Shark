@@ -6,7 +6,7 @@ const product1 = {
   categoryName: "Shirts",
   alt: "Shirt2",
   imageUrl:
-    "https://i.pinimg.com/236x/f7/4e/71/f74e710ec2a23606ca1f058979438a19.jpg",
+    "https://static.ticimax.cloud/cdn-cgi/image/width=473,quality=85/9701/uploads/urunresimleri/buyuk/olimp-whey-protein-1800-gr-cikolata--4ec5-.jpg",
 };
 
 const product2 = {
@@ -17,7 +17,7 @@ const product2 = {
   categoryName: "Shirts",
   alt: "Shirt",
   imageUrl:
-    "https://i.pinimg.com/236x/d0/89/ce/d089cee211efb0eb644506a120ee0a38.jpg",
+    "https://www.prowheyshop.com/image/cache/catalog/urun/HARDLİNE/39-1000x1000.jpg",
 };
 
 export const heroProducts = [product1, product2];
