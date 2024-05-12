@@ -37,7 +37,7 @@ export function UserDropdown({ userImage }: iAppProps) {
       </DropdownMenuTrigger>
 
       <DropdownMenuContent align="end" className="w-[200px]">
-        <DropdownMenuItem>
+        <DropdownMenuItem className="w-full">
           <NavModeToggle />
         </DropdownMenuItem>
         <DropdownMenuItem>

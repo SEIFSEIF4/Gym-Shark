@@ -11,6 +11,7 @@ const nextConfig = {
       "www.prowheyshop.com",
       "cdn.dsmcdn.com",
       "productimages.hepsiburada.net",
+      "www.eatingwell.com",
     ], // Add the hostnames here
   },
 };

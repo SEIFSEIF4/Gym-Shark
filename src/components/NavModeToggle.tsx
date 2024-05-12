@@ -14,20 +14,13 @@ export function NavModeToggle() {
 
   return (
     <div className="">
-      <Button className="flex flex-row justify-between gap-5" variant="link" onClick={toggleTheme}>
-        {theme === "dark" ? (
-          <>
-            <SunIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-            <MoonIcon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-          </>
-        ) : (
-          <>
-            <SunIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-0 transition-all dark:-rotate-90 dark:scale-100" />
-            <MoonIcon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-100 transition-all dark:rotate-0 dark:scale-100" />
-          </>
-        )}
+      <Button
+        className="flex flex-row justify-between gap-5 p-0 m-0 text-primary dark:text-primary-dark font-semibold"
+        variant="link"
+        onClick={toggleTheme}
+      >
         <span className="sr-only">Toggle theme</span>
-        {theme === "dark" ? "light" : "dark"} mode
+        {theme === "dark" ? "Light" : "Dark"} mode
       </Button>
     </div>
   );
