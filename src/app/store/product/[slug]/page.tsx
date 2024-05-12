@@ -3,7 +3,7 @@ import CheckoutNow from "@/components/CheckoutNow";
 import ImageGallery from "@/components/ImageGallery";
 import { Button } from "@/components/ui/button";
 import { Star, Truck } from "lucide-react";
-import { supplementsProducts } from "@/data/supplements-products";
+import { MainProducts } from "@/data/main-products";
 import Navbar from "@/components/Navbar";
 
 export default async function ProductPage({
@@ -11,9 +11,10 @@ export default async function ProductPage({
 }: {
   params: { slug: string };
 }) {
-  const data = supplementsProducts.find(
+  const data = MainProducts.flat().find(
     (product) => product.slug === params.slug
   );
+
   return (
     <>
       <Navbar />
@@ -74,7 +75,6 @@ export default async function ProductPage({
                     name={data.name}
                     price={data.price}
                     key={data._id}
-                    price_id={data.price_id}
                   />
                   <CheckoutNow
                     currency="TL"
@@ -83,7 +83,6 @@ export default async function ProductPage({
                     name={data.name}
                     price={data.price}
                     key={data._id}
-                    price_id={data.price_id}
                   />
                 </div>
 

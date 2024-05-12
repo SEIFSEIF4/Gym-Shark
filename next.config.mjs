@@ -7,6 +7,9 @@ const nextConfig = {
       "static.vecteezy.com",
       "lh3.googleusercontent.com",
       "www.gymequip.eu",
+      "static.ticimax.cloud",
+      "www.prowheyshop.com",
+      "cdn.dsmcdn.com",
     ], // Add the hostnames here
   },
 };

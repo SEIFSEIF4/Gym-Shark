@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import { EquipmentsProducts } from "@/data/Equipments-products";
 import { MainProducts } from "@/data/main-products";
 import Navbar from "@/components/Navbar";
 
@@ -11,11 +10,7 @@ export default async function CategoryPage({
 }: {
   params: { category: string };
 }) {
-  // const data = EquipmentsProducts.filter(
-  //   (product) => product.categoryName === params.category
-  // );
-
-  const data = MainProducts[0].filter(
+  const data = MainProducts.flat().filter(
     (product) => product.categoryName === params.category
   );
 
