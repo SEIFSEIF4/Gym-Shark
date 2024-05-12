@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { useShoppingCart } from "use-shopping-cart";
 import { ProductCart } from "./AddToBag";
+import toast from "react-hot-toast";
 
 export default function CheckoutNow({
   currency,
@@ -30,7 +31,8 @@ export default function CheckoutNow({
     <Button
       variant="outline"
       onClick={() => {
-        buyNow(product.price_id);
+        // buyNow(product.price_id);
+        toast.error("Payment is disabled in development.");
       }}
     >
       Checkout Now

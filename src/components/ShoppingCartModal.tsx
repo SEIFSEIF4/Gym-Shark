@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/sheet";
 
 import Image from "next/image";
+import toast from "react-hot-toast";
 import { useShoppingCart } from "use-shopping-cart";
 
 export default function ShoppingCartModal() {
@@ -22,15 +23,16 @@ export default function ShoppingCartModal() {
   } = useShoppingCart();
 
   async function handleCheckoutClick(event: any) {
-    event.preventDefault();
-    try {
-      const result = await redirectToCheckout();
-      if (result?.error) {
-        console.log("result");
-      }
-    } catch (error) {
-      console.log(error);
-    }
+    // event.preventDefault();
+    // try {
+    //   const result = await redirectToCheckout();
+    //   if (result?.error) {
+    //     console.log("result");
+    //   }
+    // } catch (error) {
+    //   console.log(error);
+    // }
+    toast.error("Payment is disabled in development.");
   }
   return (
     <Sheet open={shouldDisplayCart} onOpenChange={() => handleCartClick()}>

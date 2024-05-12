@@ -11,3 +11,9 @@ export const navLinks = [
   { name: "Meals Plan", href: "/meals-plan" },
   { name: "Store", href: "/store" },
 ];
+export const storeLinks = [
+  { name: "Store", href: "/store" },
+  { name: "Supplements", href: "/store/supplements" },
+  { name: "Accessories", href: "/store/accessories" },
+  { name: "Equipments", href: "/store/equipments" },
+];

@@ -5,6 +5,7 @@ import { ModeToggle } from "@/components/ui/mode-toggle";
 import MealPlan from "@/components/MealPlans";
 import MainNavbar from "@/components/MainNavbar";
 import Cardio from "./cardio/page";
+import Newest from "@/components/Newest";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <div className="md:py-8">
         <CalCalories />
       </div>
+      <Newest />
     </div>
   );
 }

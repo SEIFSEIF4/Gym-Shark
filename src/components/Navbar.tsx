@@ -6,17 +6,13 @@ import { usePathname } from "next/navigation";
 import { ShoppingBag } from "lucide-react";
 import { useShoppingCart } from "use-shopping-cart";
 import { ModeToggle } from "./ui/mode-toggle";
-
-const links = [
-  { name: "Home", href: "/" },
-  { name: "Supplements", href: "/Supplements" },
-  { name: "Accessories", href: "/Accessories" },
-  { name: "Equipments", href: "/Equipments" },
-];
+import { storeLinks } from "@/config/site";
 
 export default function Navbar() {
   const pathname = usePathname();
   const { handleCartClick } = useShoppingCart();
+  console.log(storeLinks);
+  console.log(pathname);
   return (
     <header className="border-b">
       <div className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">
@@ -27,7 +23,7 @@ export default function Navbar() {
         </Link>
 
         <nav className="hidden gap-12 lg:flex 2xl:ml-16">
-          {links.map((link, idx) => (
+          {storeLinks.map((link, idx) => (
             <div key={idx}>
               {pathname === link.href ? (
                 <Link

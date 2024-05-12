@@ -4,6 +4,7 @@ import ImageGallery from "@/components/ImageGallery";
 import { Button } from "@/components/ui/button";
 import { Star, Truck } from "lucide-react";
 import { mainProducts } from "@/data/main-products";
+import Navbar from "@/components/Navbar";
 
 export default async function ProductPage({
   params,
@@ -13,6 +14,7 @@ export default async function ProductPage({
   const data = mainProducts.find((product) => product.slug === params.slug);
   return (
     <>
+      <Navbar />
       {data === undefined ? (
         <div className="text-9xl text-center">no data</div>
       ) : (
