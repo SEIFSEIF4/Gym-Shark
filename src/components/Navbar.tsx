@@ -1,12 +1,16 @@
 "use client";
 
+import {
+  RegisterLink,
+  LoginLink,
+} from "@kinde-oss/kinde-auth-nextjs/components";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ShoppingBag } from "lucide-react";
 import { useShoppingCart } from "use-shopping-cart";
-import { ModeToggle } from "./ui/mode-toggle";
 import { storeLinks } from "@/config/site";
+import { UserDropdown } from "./userDropdown";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -43,17 +47,34 @@ export default function Navbar() {
         </nav>
 
         <div className="flex divide-x border-r sm:border-l">
-          <Button
-            variant={"outline"}
-            onClick={() => handleCartClick()}
-            className="flex flex-col gap-y-1.5 h-12 w-12 sm:h-20 sm:w-20 md:h-24 md:w-24 rounded-none"
-          >
-            <ShoppingBag />
-            <span className="hidden text-xs font-semibold text-gray-500 sm:block">
-              Cart
-            </span>
-          </Button>
-          <ModeToggle />
+          {true ? (
+            <div className="">
+              <Button
+                variant={"outline"}
+                onClick={() => handleCartClick()}
+                className="flex flex-col gap-y-1.5 h-12 w-12 sm:h-20 sm:w-20 md:h-24 md:w-24 rounded-none"
+              >
+                <ShoppingBag />
+                <span className="hidden text-xs font-semibold text-gray-500 sm:block">
+                  Cart
+                </span>
+              </Button>
+              <UserDropdown
+                userImage={
+                  "https://i.pinimg.com/236x/cf/7a/71/cf7a712855a7fe44b3b28574bfb43076.jpg"
+                }
+              />
+            </div>
+          ) : (
+            <div className="sm:h-20 sm:w-20 md:h-24">
+              <LoginLink href="/login">
+                <Button>Login</Button>
+              </LoginLink>
+              <RegisterLink href="/login">
+                <Button>Getting Started</Button>
+              </RegisterLink>
+            </div>
+          )}
         </div>
       </div>
     </header>
