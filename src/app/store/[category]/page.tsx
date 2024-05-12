@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { newestProducts } from "@/data/newest-products";
+import { EquipmentsProducts } from "@/data/Equipments-products";
+import { MainProducts } from "@/data/main-products";
 import Navbar from "@/components/Navbar";
 
 export const dynamic = "force-dynamic";
@@ -10,15 +11,17 @@ export default async function CategoryPage({
 }: {
   params: { category: string };
 }) {
-  //change this to the correct data with all data
-  const data = newestProducts.filter(
+  // const data = EquipmentsProducts.filter(
+  //   (product) => product.categoryName === params.category
+  // );
+
+  const data = MainProducts[0].filter(
     (product) => product.categoryName === params.category
   );
 
   return (
     <>
       <Navbar />
-
       <div className="bg-white">
         <div className="mx-auto max-w-2xl px-4 sm:px-6  lg:max-w-7xl lg:px-8">
           <div className="flex justify-between items-center">
@@ -26,7 +29,6 @@ export default async function CategoryPage({
               Our Products for {params.category}
             </h2>
           </div>
-
           <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
             {data.map((product) => (
               <div key={product._id} className="group relative">
