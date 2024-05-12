@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { mainProducts } from "@/data/main-products";
+import { newestProducts } from "@/data/newest-products";
 import Navbar from "@/components/Navbar";
 
 export const dynamic = "force-dynamic";
@@ -10,7 +10,10 @@ export default async function CategoryPage({
 }: {
   params: { category: string };
 }) {
-  const data = mainProducts;
+  //change this to the correct data with all data
+  const data = newestProducts.filter(
+    (product) => product.categoryName === params.category
+  );
 
   return (
     <>

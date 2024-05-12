@@ -8,7 +8,7 @@ interface iAppProps {
 }
 
 export default function ImageGallery({ images }: iAppProps) {
-  const [bigImage, setBigImage] = useState(images[1]);
+  const [bigImage, setBigImage] = useState(images[0]);
 
   const handleSmallImageClick = (image: any) => {
     setBigImage(image);
@@ -19,7 +19,7 @@ export default function ImageGallery({ images }: iAppProps) {
         {images.map((image: any, idx: any) => (
           <div key={idx} className="overflow-hidden rounded-lg bg-gray-100">
             <Image
-              src={images[0]}
+              src={images[idx]}
               width={200}
               height={200}
               alt="photo"

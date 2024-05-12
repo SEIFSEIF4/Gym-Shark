@@ -3,7 +3,7 @@ import CheckoutNow from "@/components/CheckoutNow";
 import ImageGallery from "@/components/ImageGallery";
 import { Button } from "@/components/ui/button";
 import { Star, Truck } from "lucide-react";
-import { mainProducts } from "@/data/main-products";
+import { supplementsProducts } from "@/data/supplements-products";
 import Navbar from "@/components/Navbar";
 
 export default async function ProductPage({
@@ -11,7 +11,9 @@ export default async function ProductPage({
 }: {
   params: { slug: string };
 }) {
-  const data = mainProducts.find((product) => product.slug === params.slug);
+  const data = supplementsProducts.find(
+    (product) => product.slug === params.slug
+  );
   return (
     <>
       <Navbar />
@@ -21,8 +23,7 @@ export default async function ProductPage({
         <div className="bg-white">
           <div className="mx-auto max-w-screen-xl px-4 md:px-8">
             <div className="grid gap-8 md:grid-cols-2">
-              <ImageGallery images={data.images} key={data._id} />
-
+              <ImageGallery images={data.images} />
               <div className="md:py-8">
                 <div className="mb-2 md:mb-3">
                   <span className="mb-0.5 inline-block text-gray-500">
@@ -35,28 +36,29 @@ export default async function ProductPage({
 
                 <div className="mb-6 flex items-center gap-3 md:mb-10">
                   <Button className="rounded-full gap-x-2">
-                    <span className="text-sm">4.2</span>
-                    <Star className="h-5 w-5" />
+                    <span className="text-sm">{data.rate}</span>
+                    <Star
+                      className="h-5 w-5 text-yellow-500 stroke-yellow-500"
+                      fill="true"
+                    />
                   </Button>
 
                   <span className="text-sm text-gray-500 transition duration-100">
-                    56 Ratings
+                    {data.ratings} Ratings
                   </span>
                 </div>
 
                 <div className="mb-4">
                   <div className="flex items-end gap-2">
                     <span className="text-xl font-bold text-gray-800 md:text-2xl">
-                      ${data.price}
+                      {data.price}TL
                     </span>
                     <span className="mb-0.5 text-red-500 line-through">
-                      ${data.price + 30}
+                      {data.price + 30}TL
                     </span>
                   </div>
 
-                  <span className="text-sm text-gray-500">
-                    Incl. Vat plus shipping
-                  </span>
+                  <span className="text-sm text-gray-500">{data.shipping}</span>
                 </div>
 
                 <div className="mb-6 flex items-center gap-2 text-gray-500">

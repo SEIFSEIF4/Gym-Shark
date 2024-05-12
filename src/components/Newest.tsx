@@ -6,8 +6,7 @@ import { newestProducts } from "@/data/newest-products";
 import { mainProducts } from "@/data/main-products";
 
 export default async function Newest() {
-  // const data = newestProducts;
-  const data = mainProducts;
+  const data = newestProducts;
 
   return (
     <div className="bg-card-500">
@@ -46,7 +45,7 @@ export default async function Newest() {
                   <div>
                     <h3 className="text-sm text-foreground">{product.name}</h3>
                     <p className="mt-1 text-sm text-foreground">
-                      {product.categoryName}
+                      {product.slug} / {product.categoryName}
                     </p>
                   </div>
                   <p className="text-xm font-medium text-primary">
