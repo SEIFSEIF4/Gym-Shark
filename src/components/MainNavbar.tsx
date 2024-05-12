@@ -1,6 +1,3 @@
-"use client";
-
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu } from "lucide-react";
@@ -12,10 +9,13 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { navLinks } from "@/config/site";
+import SideNavbar from "@/components/SideNavbar";
+import SubNavBar from "@/components/SubNavBar";
+import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 
-export default function MainNavbar() {
-  const pathname = usePathname();
+export default async function MainNavbar() {
+  const { getUser } = getKindeServerSession();
+  const user = await getUser();
   return (
     <>
       <header className="border-b">
@@ -25,29 +25,7 @@ export default function MainNavbar() {
               Gym<span className="text-primary">Shark</span>
             </h1>
           </Link>
-
-          <nav className="hidden gap-12 lg:flex 2xl:ml-16">
-            {navLinks.map((link, idx) => (
-              <div key={idx}>
-                {pathname === link.href ? (
-                  <Link
-                    className="text-lg font-semibold text-primary"
-                    href={link.href}
-                  >
-                    {link.name}
-                  </Link>
-                ) : (
-                  <Link
-                    href={link.href}
-                    className="text-lg font-semibold text-foreground transition duration-100 hover:text-primary"
-                  >
-                    {link.name}
-                  </Link>
-                )}
-              </div>
-            ))}
-          </nav>
-
+          <SubNavBar isStore={false} />
           <div className="flex items-center gap-5 h-12 sm:h-20 md:h-24">
             <ModeToggle />
             <Sheet>
@@ -64,27 +42,7 @@ export default function MainNavbar() {
                     </Link>
                   </SheetTitle>
                 </SheetHeader>
-                <div className="my-5">
-                  {navLinks.map((link, idx) => (
-                    <li key={idx}>
-                      {pathname === link.href ? (
-                        <Link
-                          className="text-2xl py-3 font-semibold text-primary"
-                          href={link.href}
-                        >
-                          {link.name}
-                        </Link>
-                      ) : (
-                        <Link
-                          href={link.href}
-                          className="text-2xl my-1 py-3 font-semibold text-foreground transition duration-100 hover:text-primary"
-                        >
-                          {link.name}
-                        </Link>
-                      )}
-                    </li>
-                  ))}
-                </div>
+                <SideNavbar username={user?.family_name} />
               </SheetContent>
             </Sheet>
           </div>
