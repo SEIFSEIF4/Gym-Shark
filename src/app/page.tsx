@@ -17,6 +17,7 @@ export default function Home() {
     // </div>
 
     <div>
+      <MainNavbar />
       <MealPlan />
     </div>
   );

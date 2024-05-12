@@ -3,22 +3,11 @@ export type SiteConfig = typeof siteConfig;
 export const siteConfig = {
   name: "Gym Shark",
   description: "Gym Shark!",
-  menuItems: [
-    {
-      label: "HOME",
-      href: "#home",
-    },
-    {
-      label: "DonorsList",
-      href: "#DonorsList",
-    },
-    {
-      label: "learn",
-      href: "#learn",
-    },
-    {
-      label: "Contact us",
-      href: "#Contact",
-    },
-  ],
 };
+
+export const navLinks = [
+  { name: "Home", href: "/" },
+  { name: "Cardio", href: "/cardio" },
+  { name: "Meals Plan", href: "/Meals-Plan" },
+  { name: "Calc", href: "/Calc" },
+];

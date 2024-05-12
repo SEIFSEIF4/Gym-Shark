@@ -1,16 +1,18 @@
 export const Exercises = [
   {
-    exName: "Mountain climbers",
-    url: "/cardio/Mountain-climbers",
-    videoLink: "https://www.youtube.com/embed/hq_0YlyfqGM?si=nAYtyX7LQbLWaqEo",
-    thumbnail: "https://i.ytimg.com/vi/hq_0YlyfqGM/hqdefault.jpg",
-    text: "Mountain climbers are an advanced, high-intensity cardio exercise that raises your heart rate and adds intensity to your workouts. This move will build leg endurance and help your agility, making it a great overall exercise.",
+    exName: "Pendulum Lunge",
+    url: "/cardio/Pendulum-Lunge",
+    videoLink:
+      "https://www.youtube.com/embed/Hn9zUpS-fJA?si=3A_3SKwpt6SqH5zh&amp;clip=UgkxIQNfXuPi5pdZ1hDEdwF1VzxnRsOYfoQt&amp;clipt=EKTvBhiExAo",
+    thumbnail:
+      "//www.grouphiit.com/cdn/shop/products/pendulum_lunge_1800x1800.png?v=1478289373",
+    text: "The Pendulum Lunge is a dynamic leg exercise involving stepping into a lunge and swinging the back leg forward into a kick before returning. It targets multiple leg muscles and improves balance.",
     steps: [
-      "Start in a plank position with your hands directly under your shoulders.",
-      "Engage your core and drive one knee towards your chest.",
-      "Quickly switch legs, bringing the other knee towards your chest while extending the opposite leg.",
-      "Continue alternating legs in a running motion.",
-      "Maintain a steady pace and keep your hips level throughout.",
+      "Start in a standing position with feet hip-width apart.",
+      "Step forward into a lunge, ensuring proper alignment of front knee and back knee.",
+      "Swing back leg forward into a front kick position.",
+      "Return to lunge position with back leg behind.",
+      "Push through front heel to return to standing. Repeat on alternate sides.",
     ],
   },
   {
@@ -18,7 +20,8 @@ export const Exercises = [
     url: "/cardio/Squat-jumps",
     videoLink:
       "https://www.youtube.com/embed/cAINihyvQzc?si=mTw2tjSqDUQuao2v&amp;clip=Ugkxnspd8geGLR_iAly3W-56bQ_Lid12i8_X&amp;clipt=EJ6LBxj-3wo",
-    thumbnail: "//www.grouphiit.com/cdn/shop/products/jump_squat_hiit_cardio_360x.png?v=1478280034 360w, //www.grouphiit.com/cdn/shop/products/jump_squat_hiit_cardio_540x.png?v=1478280034 540w, //www.grouphiit.com/cdn/shop/products/jump_squat_hiit_cardio_720x.png?v=1478280034 720w, //www.grouphiit.com/cdn/shop/products/jump_squat_hiit_cardio_900x.png?v=1478280034 900w, //www.grouphiit.com/cdn/shop/products/jump_squat_hiit_cardio_1080x.png?v=1478280034 1080w",
+    thumbnail:
+      "//www.grouphiit.com/cdn/shop/products/jump_squat_hiit_cardio_360x.png?v=1478280034 360w, //www.grouphiit.com/cdn/shop/products/jump_squat_hiit_cardio_540x.png?v=1478280034 540w, //www.grouphiit.com/cdn/shop/products/jump_squat_hiit_cardio_720x.png?v=1478280034 720w, //www.grouphiit.com/cdn/shop/products/jump_squat_hiit_cardio_900x.png?v=1478280034 900w, //www.grouphiit.com/cdn/shop/products/jump_squat_hiit_cardio_1080x.png?v=1478280034 1080w",
     text: "Squat jumps are a great way to add intensity to your workouts and raise your heart rate.5 Add this cardio exercise to the end of your regular workouts for a boost or perform them in between sets during resistance training.",
     steps: [
       "Start in a standing position with your feet hip-width apart.",
@@ -33,7 +36,8 @@ export const Exercises = [
     url: "/cardio/Jumping-jacks",
     videoLink:
       "https://www.youtube.com/embed/sUFZZ8tuGgA?si=7pMGOH3szEm2W6UT&amp;clip=UgkxAnVKmyeLF46C_Vi6BIYp1IFYIa3hCMHP&amp;clipt=EMChARig9gQ",
-    thumbnail: "//www.grouphiit.com/cdn/shop/products/jumping_jack_hiit_cardio_360x.png?v=1508107074 360w, //www.grouphiit.com/cdn/shop/products/jumping_jack_hiit_cardio_540x.png?v=1508107074 540w, //www.grouphiit.com/cdn/shop/products/jumping_jack_hiit_cardio_720x.png?v=1508107074 720w, //www.grouphiit.com/cdn/shop/products/jumping_jack_hiit_cardio_900x.png?v=1508107074 900w, //www.grouphiit.com/cdn/shop/products/jumping_jack_hiit_cardio_1080x.png?v=1508107074 1080w",
+    thumbnail:
+      "//www.grouphiit.com/cdn/shop/products/jumping_jack_hiit_cardio_360x.png?v=1508107074 360w, //www.grouphiit.com/cdn/shop/products/jumping_jack_hiit_cardio_540x.png?v=1508107074 540w, //www.grouphiit.com/cdn/shop/products/jumping_jack_hiit_cardio_720x.png?v=1508107074 720w, //www.grouphiit.com/cdn/shop/products/jumping_jack_hiit_cardio_900x.png?v=1508107074 900w, //www.grouphiit.com/cdn/shop/products/jumping_jack_hiit_cardio_1080x.png?v=1508107074 1080w",
     text: "Jumping jacks are a versatile cardio exercise, ideal for spicing up workouts or boosting heart rate between sets in resistance training. They engage various muscles, enhancing cardiovascular endurance and overall fitness.",
     steps: [
       "Start in a standing position with your feet together and arms at your sides.",
@@ -63,7 +67,8 @@ export const Exercises = [
     url: "/cardio/Side-Lunge",
     videoLink:
       "https://www.youtube.com/embed/X4Lqkmo28wY?si=QgNumnnzxfgwnhll&amp;clip=UgkxwvGlY6k4F0cJKhSZ3GQ08WSGPGwie-VT&amp;clipt=EI7yBRjtxgk",
-    thumbnail:"//www.grouphiit.com/cdn/shop/products/side_lunge_360x.png?v=1509986507 360w, //www.grouphiit.com/cdn/shop/products/side_lunge_540x.png?v=1509986507 540w, //www.grouphiit.com/cdn/shop/products/side_lunge_720x.png?v=1509986507 720w, //www.grouphiit.com/cdn/shop/products/side_lunge_900x.png?v=1509986507 900w, //www.grouphiit.com/cdn/shop/products/side_lunge_1080x.png?v=1509986507 1080w",
+    thumbnail:
+      "//www.grouphiit.com/cdn/shop/products/side_lunge_360x.png?v=1509986507 360w, //www.grouphiit.com/cdn/shop/products/side_lunge_540x.png?v=1509986507 540w, //www.grouphiit.com/cdn/shop/products/side_lunge_720x.png?v=1509986507 720w, //www.grouphiit.com/cdn/shop/products/side_lunge_900x.png?v=1509986507 900w, //www.grouphiit.com/cdn/shop/products/side_lunge_1080x.png?v=1509986507 1080w",
     text: "If you want a great whole-body cardio exercise that raises your heart rate quickly, side-to-side lunges will do the trick. You can perform this exercise with a jump to add more intensity, but doing it without a jump will also work.",
     steps: [
       "Start in a standing position with your feet shoulder-width apart.",
@@ -78,7 +83,7 @@ export const Exercises = [
     url: "/cardio/Squat-to-Side-Lunge",
     videoLink:
       "https://www.youtube.com/embed/Hn9zUpS-fJA?si=tD3K-whkiTXcci8j&amp;clip=UgkxlepEj3VDnTSjRgdyZfwhCW3Nu6OOOjE2&amp;clipt=EOeFExjH2hY",
-    thumbnail:"https://i.ytimg.com/vi/c0IAQC-seG8/hqdefault.jpg",
+    thumbnail: "https://i.ytimg.com/vi/c0IAQC-seG8/hqdefault.jpg",
     text: "The Squat to Side Lunge combines a squat and lateral lunge for a full lower-body workout. Start with feet hip-width apart, squat, then step to the side into a lunge. Return to squat and repeat on the other side. It targets quads, hamstrings, glutes, and improves overall lower-body strength and stability.",
     steps: [
       "Start in a standing position with your feet shoulder-width apart.",
@@ -93,7 +98,8 @@ export const Exercises = [
     url: "/cardio/Vertical-Jump",
     videoLink:
       "https://www.youtube.com/embed/sUFZZ8tuGgA?si=Ztj9KyogcqJ4NFd_&amp;clip=Ugkx2NFNOuIETySgqYUphysSNy-sP9Ik6yBE&amp;clipt=EPafLRjspTA",
-    thumbnail:"//www.grouphiit.com/cdn/shop/products/vertical_jump_hiit_cardio_exercise_360x.png?v=1478294868 360w, //www.grouphiit.com/cdn/shop/products/vertical_jump_hiit_cardio_exercise_540x.png?v=1478294868 540w, //www.grouphiit.com/cdn/shop/products/vertical_jump_hiit_cardio_exercise_720x.png?v=1478294868 720w, //www.grouphiit.com/cdn/shop/products/vertical_jump_hiit_cardio_exercise_900x.png?v=1478294868 900w, //www.grouphiit.com/cdn/shop/products/vertical_jump_hiit_cardio_exercise_1080x.png?v=1478294868 1080w",
+    thumbnail:
+      "//www.grouphiit.com/cdn/shop/products/vertical_jump_hiit_cardio_exercise_360x.png?v=1478294868 360w, //www.grouphiit.com/cdn/shop/products/vertical_jump_hiit_cardio_exercise_540x.png?v=1478294868 540w, //www.grouphiit.com/cdn/shop/products/vertical_jump_hiit_cardio_exercise_720x.png?v=1478294868 720w, //www.grouphiit.com/cdn/shop/products/vertical_jump_hiit_cardio_exercise_900x.png?v=1478294868 900w, //www.grouphiit.com/cdn/shop/products/vertical_jump_hiit_cardio_exercise_1080x.png?v=1478294868 1080w",
     text: "Vertical jumps are explosive plyometric exercises that boost leg strength and power. Start in a squat, then jump as high as possible, reaching upward. Land softly and repeat. Great for improving vertical leap and overall lower-body strength.",
     steps: [
       "Start in a standing position with your feet hip-width apart.",
@@ -108,7 +114,8 @@ export const Exercises = [
     url: "/cardio/Pulsing-Lunge",
     videoLink:
       "https://www.youtube.com/embed/REFSXurvDTM?si=MKj2e_LmGW10LTFj&amp;clip=UgkxdS8EexLVcAAEjtaVVhisfBz4ebUoX6EK&amp;clipt=ENv1Axiw6QY",
-    thumbnail:"//www.grouphiit.com/cdn/shop/products/pulsing_lunge_hiit_360x.png?v=1509984273 360w, //www.grouphiit.com/cdn/shop/products/pulsing_lunge_hiit_540x.png?v=1509984273 540w, //www.grouphiit.com/cdn/shop/products/pulsing_lunge_hiit_720x.png?v=1509984273 720w, //www.grouphiit.com/cdn/shop/products/pulsing_lunge_hiit_900x.png?v=1509984273 900w, //www.grouphiit.com/cdn/shop/products/pulsing_lunge_hiit_1080x.png?v=1509984273 1080w",
+    thumbnail:
+      "//www.grouphiit.com/cdn/shop/products/pulsing_lunge_hiit_360x.png?v=1509984273 360w, //www.grouphiit.com/cdn/shop/products/pulsing_lunge_hiit_540x.png?v=1509984273 540w, //www.grouphiit.com/cdn/shop/products/pulsing_lunge_hiit_720x.png?v=1509984273 720w, //www.grouphiit.com/cdn/shop/products/pulsing_lunge_hiit_900x.png?v=1509984273 900w, //www.grouphiit.com/cdn/shop/products/pulsing_lunge_hiit_1080x.png?v=1509984273 1080w",
     text: "Pulsing Lunges are dynamic leg exercises that target muscles with short up-and-down movements. Great for building leg strength and endurance.",
     steps: [
       "Start in a standing position with your feet hip-width apart.",
@@ -123,7 +130,8 @@ export const Exercises = [
     url: "/cardio/Jogging-with-high-knees",
     videoLink:
       "https://www.youtube.com/embed/q2NZyW5EP5A?si=ZyNslQWZlz26FyZ2&amp;clip=Ugkx3OO4e6yYaE2vZNyES48P4bWrX8EPsPtw&amp;clipt=EK-0BBiPiQg",
-    thumbnail:"//www.grouphiit.com/cdn/shop/products/high_knees_hiit_cardio_360x.png?v=1508105002 360w, //www.grouphiit.com/cdn/shop/products/high_knees_hiit_cardio_540x.png?v=1508105002 540w, //www.grouphiit.com/cdn/shop/products/high_knees_hiit_cardio_720x.png?v=1508105002 720w, //www.grouphiit.com/cdn/shop/products/high_knees_hiit_cardio_900x.png?v=1508105002 900w, //www.grouphiit.com/cdn/shop/products/high_knees_hiit_cardio_1080x.png?v=1508105002 1080w",
+    thumbnail:
+      "//www.grouphiit.com/cdn/shop/products/high_knees_hiit_cardio_360x.png?v=1508105002 360w, //www.grouphiit.com/cdn/shop/products/high_knees_hiit_cardio_540x.png?v=1508105002 540w, //www.grouphiit.com/cdn/shop/products/high_knees_hiit_cardio_720x.png?v=1508105002 720w, //www.grouphiit.com/cdn/shop/products/high_knees_hiit_cardio_900x.png?v=1508105002 900w, //www.grouphiit.com/cdn/shop/products/high_knees_hiit_cardio_1080x.png?v=1508105002 1080w",
     text: "To add intensity to jogging in place, try lifting your knees high. Bring your knees to hip height to engage your core, quads, and hip flexors.",
     steps: [
       "Start in a standing position with your feet hip-width apart and arms at your sides.",
@@ -138,7 +146,8 @@ export const Exercises = [
     url: "/cardio/Jogging-in-place",
     videoLink:
       "https://www.youtube.com/embed/q2NZyW5EP5A?si=e0iOV95IZcKGpXac&amp;clip=UgkxrBAue9m1fpEBxbYnHP-HGp-6N_ho_fp4&amp;clipt=EPiVARjCqAQ",
-    thumbnail:"https://cdn.shopify.com/s/files/1/1021/9561/files/burncardio38l.jpg?v=1692669417",
+    thumbnail:
+      "https://cdn.shopify.com/s/files/1/1021/9561/files/burncardio38l.jpg?v=1692669417",
     text: "Jogging in place is a simple indoor cardio option to elevate your heart rate. While it lacks the intensity of outdoor jogging due to the absence of forward motion and wind resistance, you can increase the challenge by using your arms and adding movement around your home or stairs.",
     steps: [
       "Start in a standing position with your feet hip-width apart and arms at your sides.",
@@ -152,7 +161,8 @@ export const Exercises = [
     exName: "Jump kick lunge",
     url: "/cardio/Jump-kick-lunge",
     videoLink: "https://www.youtube.com/embed/Y-wqbrfiHMk?si=26ruZPZ2BKKTOlyW",
-    thumbnail:"//www.grouphiit.com/cdn/shop/products/jump_lunge_hiit_workout_exercise_360x.png?v=1508105807 360w, //www.grouphiit.com/cdn/shop/products/jump_lunge_hiit_workout_exercise_540x.png?v=1508105807 540w, //www.grouphiit.com/cdn/shop/products/jump_lunge_hiit_workout_exercise_720x.png?v=1508105807 720w, //www.grouphiit.com/cdn/shop/products/jump_lunge_hiit_workout_exercise_900x.png?v=1508105807 900w, //www.grouphiit.com/cdn/shop/products/jump_lunge_hiit_workout_exercise_1080x.png?v=1508105807 1080w",
+    thumbnail:
+      "//www.grouphiit.com/cdn/shop/products/jump_lunge_hiit_workout_exercise_360x.png?v=1508105807 360w, //www.grouphiit.com/cdn/shop/products/jump_lunge_hiit_workout_exercise_540x.png?v=1508105807 540w, //www.grouphiit.com/cdn/shop/products/jump_lunge_hiit_workout_exercise_720x.png?v=1508105807 720w, //www.grouphiit.com/cdn/shop/products/jump_lunge_hiit_workout_exercise_900x.png?v=1508105807 900w, //www.grouphiit.com/cdn/shop/products/jump_lunge_hiit_workout_exercise_1080x.png?v=1508105807 1080w",
     txt: "This is a great cardio exercise to raise your heart rate with no equipment. It is low impact, but that doesn't mean low intensity. Adding a low lunge while touching the floor will engage your glutes and thighs and help to raise your heart rate",
     steps: [
       "Start in a standing position with your feet shoulder-width apart.",
@@ -167,7 +177,8 @@ export const Exercises = [
     url: "/cardio/Ice-skaters",
     videoLink:
       "https://www.youtube.com/embed/8tRI-mNe-9w?si=kB3yrZVZsWP5GrhB&amp;clip=UgkxC6g5APQQBM_j99rFKQb--09E2-qgk5Oi&amp;clipt=EIfqKBi7lis",
-    thumbnail:"//www.grouphiit.com/cdn/shop/products/ice_skater_hiit_cardio_360x.png?v=1508105313 360w, //www.grouphiit.com/cdn/shop/products/ice_skater_hiit_cardio_540x.png?v=1508105313 540w, //www.grouphiit.com/cdn/shop/products/ice_skater_hiit_cardio_720x.png?v=1508105313 720w, //www.grouphiit.com/cdn/shop/products/ice_skater_hiit_cardio_900x.png?v=1508105313 900w, //www.grouphiit.com/cdn/shop/products/ice_skater_hiit_cardio_1080x.png?v=1508105313 1080w",
+    thumbnail:
+      "//www.grouphiit.com/cdn/shop/products/ice_skater_hiit_cardio_360x.png?v=1508105313 360w, //www.grouphiit.com/cdn/shop/products/ice_skater_hiit_cardio_540x.png?v=1508105313 540w, //www.grouphiit.com/cdn/shop/products/ice_skater_hiit_cardio_720x.png?v=1508105313 720w, //www.grouphiit.com/cdn/shop/products/ice_skater_hiit_cardio_900x.png?v=1508105313 900w, //www.grouphiit.com/cdn/shop/products/ice_skater_hiit_cardio_1080x.png?v=1508105313 1080w",
     text: "Speed skaters are great for getting your heart rate up and working the body with lateral movement, something we often don't spend much time doing. ",
     steps: [
       "Start in a standing position with your feet together and arms at your sides.",
@@ -178,17 +189,32 @@ export const Exercises = [
     ],
   },
   {
+    exName: "Mountain climbers",
+    url: "/cardio/Mountain-climbers",
+    videoLink: "https://www.youtube.com/embed/hq_0YlyfqGM?si=nAYtyX7LQbLWaqEo",
+    thumbnail: "https://i.ytimg.com/vi/hq_0YlyfqGM/hqdefault.jpg",
+    text: "Mountain climbers are an advanced, high-intensity cardio exercise that raises your heart rate and adds intensity to your workouts. This move will build leg endurance and help your agility, making it a great overall exercise.",
+    steps: [
+      "Start in a plank position with your hands directly under your shoulders.",
+      "Engage your core and drive one knee towards your chest.",
+      "Quickly switch legs, bringing the other knee towards your chest while extending the opposite leg.",
+      "Continue alternating legs in a running motion.",
+      "Maintain a steady pace and keep your hips level throughout.",
+    ],
+  },
+  {
     exName: "Flutter Kick",
     url: "/cardio/Flutter-Kick",
     videoLink:
       "https://www.youtube.com/embed/8AvPJAimmeg?si=cEYMUuPnnFlLi4sW&amp;clip=UgkxAjRU9LIXYc3u11OZ6VlkH8layKcHY-0t&amp;clipt=EPDkFhj19Bk",
-    thumbnail:"https://i.ytimg.com/vi/rqyyVGT3vHI/hqdefault.jpg",
+    thumbnail: "https://i.ytimg.com/vi/rqyyVGT3vHI/hqdefault.jpg",
     text: "Flutter kicks are a core-strengthening exercise where you lie on your back, lift your legs slightly off the ground, and kick them up and down in quick, alternating motions. This move targets your lower abs and hip flexors, helping improve core stability and endurance.",
     steps: [
       "Start in a standing position with your feet hip-width apart and arms at your sides.",
       "Jump to the right, landing on your right foot with your left leg crossed behind your right leg.",
       "Simultaneously swing your left arm across your body and reach towards your right foot.",
       "Jump to the left, landing on your left foot with your right leg crossed behind your left leg.",
+
       "Swing your right arm across your body and reach towards your left foot.",
     ],
   },
@@ -197,8 +223,7 @@ export const Exercises = [
     url: "/cardio/Jump-Lunge-to-Jump-Squat",
     videoLink:
       "https://www.youtube.com/embed/0VfCpXJQRYg?si=RHOtIZKXsaPMqMo5&amp;clip=Ugkx44K9cB66e4dNvk7YbNYttHx90Niexh6j&amp;clipt=EOy_DxjjghM",
-    thumbnail:
-      "https://i.ytimg.com/vi/KYleTWPdygc/hqdefault.jpg",
+    thumbnail: "https://i.ytimg.com/vi/KYleTWPdygc/hqdefault.jpg",
     text: "The Jump Lunge to Jump Squat is a dynamic combo that targets your legs and boosts cardio fitness. Start with alternating jump lunges, then transition into jump squats for a powerful lower-body workout.",
     steps: [
       "Start in a standing position with your feet hip-width apart.",
@@ -228,7 +253,8 @@ export const Exercises = [
     exName: "Frog jumps",
     url: "/cardio/Frog-jumps",
     videoLink: "https://www.youtube.com/embed/1HXEiJBMdPE?si=j4mBdSTMzmRVOiE8",
-    thumbnail:"//www.grouphiit.com/cdn/shop/products/frog_jump_hiit_workout_360x.png?v=1508104214 360w, //www.grouphiit.com/cdn/shop/products/frog_jump_hiit_workout_540x.png?v=1508104214 540w, //www.grouphiit.com/cdn/shop/products/frog_jump_hiit_workout_720x.png?v=1508104214 720w, //www.grouphiit.com/cdn/shop/products/frog_jump_hiit_workout_900x.png?v=1508104214 900w, //www.grouphiit.com/cdn/shop/products/frog_jump_hiit_workout_1080x.png?v=1508104214 1080w",
+    thumbnail:
+      "//www.grouphiit.com/cdn/shop/products/frog_jump_hiit_workout_360x.png?v=1508104214 360w, //www.grouphiit.com/cdn/shop/products/frog_jump_hiit_workout_540x.png?v=1508104214 540w, //www.grouphiit.com/cdn/shop/products/frog_jump_hiit_workout_720x.png?v=1508104214 720w, //www.grouphiit.com/cdn/shop/products/frog_jump_hiit_workout_900x.png?v=1508104214 900w, //www.grouphiit.com/cdn/shop/products/frog_jump_hiit_workout_1080x.png?v=1508104214 1080w",
     txt: "Frog jumps are an advanced high-intensity cardio exercise that gets your heart rate up quickly using low-body power and endurance.",
     steps: [
       "Place your feet about hip-width apart, and squat low enough that you can put your hands on the floor in front of you.",
@@ -259,8 +285,7 @@ export const Exercises = [
     url: "/cardio/Star-Jump",
     videoLink:
       "https://www.youtube.com/embed/5AcCoxTIPqE?si=axW3BsxuVLkYOVqn&amp;clip=Ugkx2KlGrDf-YRmm-zF_QQQjIXGa9V056ppK&amp;clipt=ENeYARi5mQQ",
-    thumbnail:
-      "https://i.ytimg.com/vi/lkYtECQYrWo/hqdefault.jpg",
+    thumbnail: "https://i.ytimg.com/vi/lkYtECQYrWo/hqdefault.jpg",
     text: "The Star Jump is a dynamic plyometric exercise where you jump explosively, spreading your arms and legs out like a star. It works multiple muscles and boosts cardiovascular endurance.",
     steps: [
       "Start in a standing position with your feet together and arms at your sides.",
@@ -268,22 +293,6 @@ export const Exercises = [
       "Simultaneously spread your legs wide and extend your arms out to the sides and overhead, forming a star shape.",
       "Land softly back on the balls of your feet with your knees bent.",
       "Repeat the star jump in a fluid, continuous motion.",
-    ],
-  },
-  {
-    exName: "Pendulum Lunge",
-    url: "/cardio/Pendulum-Lunge",
-    videoLink:
-      "https://www.youtube.com/embed/Hn9zUpS-fJA?si=3A_3SKwpt6SqH5zh&amp;clip=UgkxIQNfXuPi5pdZ1hDEdwF1VzxnRsOYfoQt&amp;clipt=EKTvBhiExAo",
-    thumbnail:
-      "//www.grouphiit.com/cdn/shop/products/pendulum_lunge_1800x1800.png?v=1478289373",
-    text: "The Pendulum Lunge is a dynamic leg exercise involving stepping into a lunge and swinging the back leg forward into a kick before returning. It targets multiple leg muscles and improves balance.",
-    steps: [
-      "Start in a standing position with feet hip-width apart.",
-      "Step forward into a lunge, ensuring proper alignment of front knee and back knee.",
-      "Swing back leg forward into a front kick position.",
-      "Return to lunge position with back leg behind.",
-      "Push through front heel to return to standing. Repeat on alternate sides.",
     ],
   },
 ];
