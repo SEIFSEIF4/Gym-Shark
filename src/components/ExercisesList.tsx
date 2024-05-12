@@ -8,7 +8,7 @@ export default function ExercisesList() {
   const pathname = usePathname();
   return (
     <div>
-      <ul className="list-disc max-w-md min-w-[220px] bg-card bg-opacity-40 list-outside border-2 rounded">
+      <ul className="list-disc max-w-md min-w-[250px] bg-card bg-opacity-40 list-outside border-2 rounded">
         <h1 className="text-xl px-3 pt-4">Cardio Exercises</h1>
         <div className="pl-8 pt-3 pb-4 text-primary">
           {Exercises.map((item, index) => (

@@ -6,7 +6,7 @@ export default function CardioExercisesHeader() {
       <div className="text-4xl w-4/5">
         <h1>20 Cardio Exercises for a Gym-Free Workout</h1>
       </div>
-      <p className="mt-5 w-4/5">
+      <p className="mt-5 w-4/5 hidden md:block">
         Add variety and new challenges to your home workout with cardio
         exercises that boost the intensity of your fitness regimen. Powerful,
         explosive movements that use body weight allow you a maximum cardio
