@@ -10,9 +10,18 @@ export default async function CategoryPage({
 }: {
   params: { category: string };
 }) {
-  const data = MainProducts.flat().filter(
-    (product) => product.categoryName === params.category
-  );
+  let data = [];
+
+  if (params.category === "all") {
+    data = MainProducts.flat();
+  } else {
+    data = MainProducts.flat().filter(
+      (product) => product.categoryName === params.category
+    );
+  }
+
+  const randomSort = () => Math.random() - 0.5;
+  data.sort(randomSort);
 
   return (
     <>
