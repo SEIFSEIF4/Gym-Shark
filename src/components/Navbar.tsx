@@ -11,8 +11,6 @@ import { storeLinks } from "@/config/site";
 export default function Navbar() {
   const pathname = usePathname();
   const { handleCartClick } = useShoppingCart();
-  console.log(storeLinks);
-  console.log(pathname);
   return (
     <header className="border-b">
       <div className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">

@@ -41,15 +41,27 @@ export default function InfoCard({
               <p className="text-primary">{maintainWeight} cal</p>
             </div>
             <div className="flex flex-row justify-between border-1 border-secondary p-2">
-              <p>Mild weight <span className="text-xs text-gray-500">loss 0.25 kg/week</span></p>
+              <p>
+                Mild weight{" "}
+                <span className="text-xs text-gray-500">
+                  {" "}
+                  loss 0.25 kg/week
+                </span>
+              </p>
               <p className="text-primary">{mildWeightLoss} cal</p>
             </div>
             <div className="flex flex-row justify-between border-1 border-secondary p-2">
-              <p>Weight loss <span className="text-xs text-gray-500">loss 0.5 kg/week</span></p>
+              <p>
+                Weight loss{" "}
+                <span className="text-xs text-gray-500"> loss 0.5 kg/week</span>
+              </p>
               <p className="text-primary">{WeightLoss} cal</p>
             </div>
             <div className="flex flex-row justify-between border-1 border-secondary p-2">
-              <p>Extreme weight <span className="text-xs text-gray-500">loss 1 kg/week</span></p>
+              <p>
+                Extreme weight{" "}
+                <span className="text-xs text-gray-500"> loss 1 kg/week</span>
+              </p>
               <p className="text-primary">{extremeWeightLoss} cal</p>
             </div>
           </div>
