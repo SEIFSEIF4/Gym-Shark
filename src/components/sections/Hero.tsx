@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="relative overflow-hidden pb-24 lg:py-32 duration-500 animate-in animate fade-in-5 slide-in-from-bottom-2.5">
         {/* Gradients */}
         <Image
-          src="https://i.pinimg.com/originals/df/e3/81/dfe38133f5ff8d5252e86ee30a67f2a5.jpg"
+          src="https://muffingroup.com/blog/wp-content/uploads/2022/09/victor-freitas-WvDYdXDzkhs-unsplash.png"
           alt="Picture of the author"
           width={1234}
           height={771}
@@ -25,11 +25,11 @@ export default function Hero() {
         {/* End Gradients */}
         <div className="relative z-10">
           <div className="container py-10 lg:py-16">
-            <div className="max-w-2xl text-center mx-auto">
+            <div className="max-w-2xl text-center mx-auto text-white">
               <p className="">Elevate your projects</p>
               {/* Title */}
               <div className="mt-5 max-w-2xl">
-                <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+                <h1 className="scroll-m-20 text-4xl font-extrabold text-white tracking-tight lg:text-5xl">
                   Beautiful UI Blocks
                 </h1>
               </div>
