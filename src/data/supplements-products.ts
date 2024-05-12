@@ -134,7 +134,7 @@ const Product9 = {
   shipping: "2-4 Day Aras Kargo Shipping",
 };
 
-export const EquipmentsProducts = [
+export const SupplementsProducts = [
   Product1,
   Product2,
   Product3,

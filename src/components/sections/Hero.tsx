@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -36,14 +37,22 @@ export default function Hero() {
               {/* End Title */}
               <div className="mt-5 max-w-3xl">
                 <p className="text-xl text-muted-foreground">
-                Explore a range of cutting-edge fitness solutions designed to elevate your workouts and help you achieve your health and wellness goals
+                  Explore a range of cutting-edge fitness solutions designed to
+                  elevate your workouts and help you achieve your health and
+                  wellness goals
                 </p>
               </div>
               {/* Buttons */}
               <div className="mt-8 gap-3 flex justify-center">
-                <Button size={"lg"}>Go to Store</Button>
-                <Button size={"lg"} variant={"outline"}>
-                  Go to Cardio
+                <Button size={"lg"} asChild className="text-foreground">
+                  <Link href="/store">Go to Store</Link>
+                </Button>
+                <Button
+                  size={"lg"}
+                  variant={"outline"}
+                  className="hover:text-primary text-accent-foreground"
+                >
+                  <Link href="/meals-plan">Meals Plan</Link>
                 </Button>
               </div>
               {/* End Buttons */}

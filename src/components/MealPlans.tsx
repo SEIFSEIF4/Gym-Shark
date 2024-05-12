@@ -5,6 +5,11 @@ import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
 export default function MealPlans() {
   const list = [
     {
+      title: "by a Dietitian",
+      img: "https://www.eatingwell.com/thmb/AGTb-qmMP7kf3yF79oAAaNR6DxI=/750x0/filters:gifv(webm)/prep-0420-square-logo-b7cfe71938fe482d961da8b01ed18798.gif",
+      description: "Mediterranean Diet Meal Plans",
+    },
+    {
       title:
         "7-Day Mediterranean Diet Meal Plan for Heart Health, Created by a Dietitian",
       img: "https://www.eatingwell.com/thmb/ZD1rHDfyJ4VYYN6e1Q8BQDwBZ8k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/7-Day-Mediterranean-Diet-Meal-Plan-for-Heart-Health-Created-by-a-Dietitian-8d2d5451b2f64850ac9777e9fe2e719e.jpg",
@@ -83,11 +88,14 @@ export default function MealPlans() {
       {list.map((item, index) => (
         <Card shadow="md" key={index} isPressable>
           <CardBody className="overflow-visible p-0">
-            <Image
-              shadow="sm"
-              radius="lg"
+            <video
+              // shadow="sm"
+              // radius="lg"
               width="100%"
-              alt={item.title}
+              // alt={item.title}
+              loop
+              autoPlay
+              muted
               className="w-full object-cover h-[140px]"
               src={item.img}
             />

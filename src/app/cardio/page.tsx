@@ -1,8 +1,6 @@
-"use client";
 import React, { Suspense } from "react";
 import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
 import { Exercises } from "@/data/cardio-exercises";
-import IFrame from "@/components/IFrame";
 import MainNavbar from "@/components/MainNavbar";
 import Link from "next/link";
 import CardioExercisesHeader from "@/components/CardioExercisesHeader";

@@ -10,6 +10,7 @@ const nextConfig = {
       "static.ticimax.cloud",
       "www.prowheyshop.com",
       "cdn.dsmcdn.com",
+      "productimages.hepsiburada.net",
     ], // Add the hostnames here
   },
 };
