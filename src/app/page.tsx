@@ -7,17 +7,17 @@ import Cardio from "./cardio/page";
 
 export default function Home() {
   return (
-    // <div>
-    //   <Navbar />
-    //   <Hero />
-    //   <div className="md:py-8">
-    //     <CalCalories />
-    //   </div>
-    // </div>
+    <div>
+      <Navbar />
+      <Hero />
+      <div className="md:py-8">
+        <CalCalories />
+      </div>
+    </div>
 
     // <div>
     //   <MealPlan />
     // </div>
-    <Cardio />
+    // <Cardio />
   );
 }

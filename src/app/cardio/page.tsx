@@ -6,7 +6,7 @@ import IFrame from "@/components/IFrame";
 
 export default function Cardio() {
   return (
-    <div className="gap-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-20 ">
+    <div className="gap-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-20">
       {Exercises.map((item, index) => (
         <Card shadow="md" key={index}>
           <CardBody className="overflow-visible p-0">
