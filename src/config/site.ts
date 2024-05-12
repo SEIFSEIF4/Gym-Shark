@@ -8,6 +8,6 @@ export const siteConfig = {
 export const navLinks = [
   { name: "Home", href: "/" },
   { name: "Cardio", href: "/cardio" },
-  { name: "Meals Plan", href: "/Meals-Plan" },
-  { name: "Calc", href: "/Calc" },
+  { name: "Meals Plan", href: "/meals-plan" },
+  { name: "Store", href: "/store" },
 ];

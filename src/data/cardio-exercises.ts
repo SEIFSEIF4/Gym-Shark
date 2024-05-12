@@ -48,8 +48,8 @@ export const Exercises = [
     ],
   },
   {
-    exName: "Side Shuffle With Toe Tap",
-    url: "/cardio/Side-Shuffle-With-Toe-Tap",
+    exName: "Side Shuffle",
+    url: "/cardio/Side-Shuffle",
     videoLink:
       "https://www.youtube.com/embed/JQBzNDEJUlg?si=YAIQ7RGjfOJIpGC7&amp;clip=UgkxEh9R-V32P_xoJ7-JGsxAPJinT_bS5-yQ&amp;clipt=EPT-BhjU0wo",
     thumbnail: "https://i.ytimg.com/vi/JQBzNDEJUlg/hqdefault.jpg",
@@ -126,8 +126,8 @@ export const Exercises = [
     ],
   },
   {
-    exName: "Jogging with high knees",
-    url: "/cardio/Jogging-with-high-knees",
+    exName: "Jog high knees",
+    url: "/cardio/Jog-high-knees",
     videoLink:
       "https://www.youtube.com/embed/q2NZyW5EP5A?si=ZyNslQWZlz26FyZ2&amp;clip=Ugkx3OO4e6yYaE2vZNyES48P4bWrX8EPsPtw&amp;clipt=EK-0BBiPiQg",
     thumbnail:
@@ -219,8 +219,8 @@ export const Exercises = [
     ],
   },
   {
-    exName: "Jump Lunge to Jump Squat",
-    url: "/cardio/Jump-Lunge-to-Jump-Squat",
+    exName: "Jump Lunge",
+    url: "/cardio/Jump-Lunge",
     videoLink:
       "https://www.youtube.com/embed/0VfCpXJQRYg?si=RHOtIZKXsaPMqMo5&amp;clip=Ugkx44K9cB66e4dNvk7YbNYttHx90Niexh6j&amp;clipt=EOy_DxjjghM",
     thumbnail: "https://i.ytimg.com/vi/KYleTWPdygc/hqdefault.jpg",

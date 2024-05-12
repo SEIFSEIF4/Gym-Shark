@@ -13,13 +13,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-
-const links = [
-  { name: "Home", href: "/" },
-  { name: "Cardio", href: "/cardio" },
-  { name: "Meals Plan", href: "/Meals-Plan" },
-  { name: "Calc", href: "/Calc" },
-];
+import { navLinks } from "@/config/site";
 
 export default function MainNavbar() {
   const pathname = usePathname();
@@ -34,7 +28,7 @@ export default function MainNavbar() {
           </Link>
 
           <nav className="hidden gap-12 lg:flex 2xl:ml-16">
-            {links.map((link, idx) => (
+            {navLinks.map((link, idx) => (
               <div key={idx}>
                 {pathname === link.href ? (
                   <Link
@@ -72,11 +66,11 @@ export default function MainNavbar() {
                   </SheetTitle>
                 </SheetHeader>
                 <div className="my-5">
-                  {links.map((link, idx) => (
-                    <div key={idx}>
+                  {navLinks.map((link, idx) => (
+                    <li key={idx}>
                       {pathname === link.href ? (
                         <Link
-                          className="text-lg font-semibold text-primary"
+                          className="text-2xl py-3 font-semibold text-primary"
                           href={link.href}
                         >
                           {link.name}
@@ -84,12 +78,12 @@ export default function MainNavbar() {
                       ) : (
                         <Link
                           href={link.href}
-                          className="text-lg font-semibold text-foreground transition duration-100 hover:text-primary"
+                          className="text-2xl my-1 py-3 font-semibold text-foreground transition duration-100 hover:text-primary"
                         >
                           {link.name}
                         </Link>
                       )}
-                    </div>
+                    </li>
                   ))}
                 </div>
               </SheetContent>
