@@ -17,7 +17,7 @@ export default async function Hero() {
           </p>
         </div>
 
-        <div className="mb-12 flex w-full md:mb-16 lg:w-2/3">
+        <div className="mb-12 flex w-full md:mb-16 lg:w-2/3 gap-2">
           <div className="relative left-12 top-12 z-10 -ml-12 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:left-16 md:top-16 lg:ml-0">
             <Image
               src={data[0].imageUrl}
@@ -45,20 +45,20 @@ export default async function Hero() {
       <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
         <div className="flex h-12 w-[400px] divide-x overflow-hidden rounded-lg border">
           <Link
-            href="/supplements"
-            className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
+            href="/store/supplements"
+            className="flex w-1/3 items-center justify-center text-foreground transition duration-100 hover:bg-gray-100 active:bg-gray-200"
           >
             Supplements
           </Link>
           <Link
-            href="/accessories"
-            className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
+            href="/store/accessories"
+            className="flex w-1/3 items-center justify-center text-foreground transition duration-100 hover:bg-gray-100 active:bg-gray-200"
           >
             Accessories
           </Link>
           <Link
-            href="/equipments"
-            className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
+            href="/store/equipments"
+            className="flex w-1/3 items-center justify-center text-foreground transition duration-100 hover:bg-gray-100 active:bg-gray-200"
           >
             Equipments
           </Link>
