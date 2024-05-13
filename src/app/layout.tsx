@@ -15,7 +15,11 @@ const fontSans = FontSans({
 
 export const metadata: Metadata = {
   title: "Gym Shark",
-  description: "",
+  description:
+    "Explore a range of cutting-edge fitness solutions designed to elevate your workouts and help you achieve your health and wellness goals",
+  icons: {
+    icon: "./favicon.ico",
+  },
 };
 
 export default function RootLayout({
