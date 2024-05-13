@@ -7,7 +7,7 @@ export default function MealPlans() {
   return (
     <div className="gap-5 grid grid-cols-1  md:grid-cols-2  lg:grid-cols-3 2xl:grid-cols-5 p-20 ">
       {Meals.map((item, index) => (
-        <Link href={`/meals-plan/${item.title}`} key={index}>
+        <Link href={`/meals-plan/meal`} key={index}>
           <Card
             shadow="md"
             key={index}

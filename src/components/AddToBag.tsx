@@ -29,7 +29,7 @@ export default function AddToBag({
     description: description,
     price: price,
     currency: currency,
-    // image: urlFor(image).url(),
+    image: image,
   };
   return (
     <Button

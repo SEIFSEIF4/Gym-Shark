@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 import { MainProducts } from "@/data/main-products";
 import Navbar from "@/components/Navbar";
 import AddToBag from "@/components/AddToBag";
-import { redirect } from "next/dist/server/api-utils";
 
 export default async function ProductPage({
   params,
