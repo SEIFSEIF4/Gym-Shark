@@ -109,8 +109,8 @@ export default function CalCaloriesForm() {
         onSubmit={form.handleSubmit(onSubmit)}
         className="space-y-8 animate-appearance-in"
       >
-        <div className="flex flex-col gap-5 md:flex-row justify-center items-center p-3">
-          <Card className="w-[450px]">
+        <div className="flex flex-col gap-5 md:flex-row justify-center items-center mx-auto px-4 sm:px-6 lg:px-8">
+          <Card className="w-[450px] md:w-[400px] lg:w-[450px]">
             <CardHeader>
               <CardTitle>Calorie Calculator</CardTitle>
               <CardDescription>

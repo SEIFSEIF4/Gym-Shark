@@ -26,7 +26,7 @@ export default function InfoCard({
 }: InfoCardProps) {
   return (
     <div>
-      <Card className="w-[450px] md:min-h-[500px]">
+      <Card className="w-[450px] md:w-[400px] lg:w-[450px] md:min-h-[500px]">
         <CardHeader>
           <CardTitle>Your Result</CardTitle>
           <CardDescription>
