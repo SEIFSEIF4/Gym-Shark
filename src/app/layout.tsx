@@ -19,7 +19,8 @@ export const metadata: Metadata = {
   description:
     "Explore a range of cutting-edge fitness solutions designed to elevate your workouts and help you achieve your health and wellness goals",
   icons: {
-    icon: "./favicon.ico",
+    icon: ["favicon-16x16.png"],
+    apple: ["/apple-touch-icon.png"],
   },
 };
 
