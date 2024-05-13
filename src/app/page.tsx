@@ -6,6 +6,7 @@ import MealPlan from "@/components/MealPlans";
 import MainNavbar from "@/components/MainNavbar";
 import Cardio from "./cardio/page";
 import Newest from "@/components/Newest";
+import NewestMeals from "@/components/NewestMeals";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <CalCalories />
       </div>
       <Newest />
+      <NewestMeals />
     </div>
   );
 }
