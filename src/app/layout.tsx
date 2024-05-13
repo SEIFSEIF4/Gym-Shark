@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import { Providers } from "@/components/providers";
 import CartProvider from "@/components/CartProvider";
 import ShoppingCartModal from "@/components/ShoppingCartModal";
+import Footer from "@/components/Footer";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -42,6 +43,7 @@ export default function RootLayout({
         >
           <CartProvider>
             <main className="max-w-screen-7xl">{children}</main>
+            <Footer />
             <ShoppingCartModal />
             <Toaster />
           </CartProvider>
