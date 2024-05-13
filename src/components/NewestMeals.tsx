@@ -27,9 +27,8 @@ export default async function NewestMeals() {
         </div>
 
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 ">
-          {data.map((meal:any) => (
-            // href={`store/product/${product.slug}`} key={product._id}
-            <Link href={""}>
+          {data.map((meal: any, index: number) => (
+            <Link href={"/meals-plan/meal"} key={index}>
               <div className="group relative hover:opacity-75">
                 <div className="aspect-square w-full overflow-hidden rounded-md bg-foreground-200  lg:h-80 border-1 border-gray-500 shadow-lg">
                   <Image
@@ -43,7 +42,9 @@ export default async function NewestMeals() {
 
                 <div className="mt-4 flex justify-between">
                   <div>
-                    <h3 className="text-sm text-foreground">{meal.description}</h3>
+                    <h3 className="text-sm text-foreground">
+                      {meal.description}
+                    </h3>
                   </div>
                 </div>
               </div>

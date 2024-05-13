@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { MainProducts } from "@/data/main-products";
 import Navbar from "@/components/Navbar";
 import AddToBag from "@/components/AddToBag";
-import NewestMeals from "@/components/NewestMeals";
+import Newest from "@/components/Newest";
 
 export default async function ProductPage({
   params,
@@ -37,7 +37,7 @@ export default async function ProductPage({
         </div>
       ) : (
         <>
-          <div className="bg-card main-height flex-col flex justify-center items-start py-16">
+          <div className="main-height justify-center items-start py-16">
             <div className="mx-auto max-w-screen-xl px-4 md:px-8 ">
               <div className="grid gap-8 md:grid-cols-2">
                 <ImageGallery images={data.images} />
@@ -108,7 +108,7 @@ export default async function ProductPage({
                 </div>
               </div>
             </div>
-            <NewestMeals />
+            <Newest />
           </div>
         </>
       )}
