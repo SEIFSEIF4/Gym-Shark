@@ -21,9 +21,9 @@ export default async function ProductPage({
       {data === undefined ? (
         <div className="text-9xl text-center">no data</div>
       ) : (
-        <div className="bg-card">
-          <div className="mx-auto max-w-screen-xl px-4 md:px-8">
-            <div className="grid gap-8 md:grid-cols-2 ">
+        <div className="bg-card h-[88vh]">
+          <div className="mx-auto max-w-screen-xl px-4 md:px-8 ">
+            <div className="grid gap-8 md:grid-cols-2">
               <ImageGallery images={data.images} />
               <div className="md:py-8 ">
                 <div className="mb-2 md:mb-3">
