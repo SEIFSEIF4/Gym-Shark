@@ -11,8 +11,8 @@ export default function Meals({ meals }: { meals: string }) {
   return (
     <>
       <MainNavbar />
-      <div className="p-5">
-        <h1 className="text-3xl font-bold lg:text-5xl py-3">
+      <div className="p-5 max-w-[50vh] sm:max-w-[70vh] md:max-w-[90vh] lg:max-w-[150vh]  m-auto">
+        <h1 className="text-3xl font-bold lg:text-5xl py-3 ">
           7-Day No-Sugar, High-Fiber & High-Protein Meal Plan, Created by a
           Dietitian
         </h1>
@@ -27,7 +27,7 @@ export default function Meals({ meals }: { meals: string }) {
           Haddad-Garcia
         </p>
       </div>
-      <div className="bg-gray-500 flex-col max-w-[50vh] lg:max-w-[75vh] flex justify-start items-start m-auto min-h-screen p-3">
+      <div className="bg-card border-1 border-gray-500 flex-col max-w-[50vh] sm:max-w-[70vh] md:max-w-[90vh] lg:max-w-[100vh] xl:max-w-[120vh] flex justify-start items-start m-auto min-h-screen p-3">
         <Image
           src="https://www.eatingwell.com/thmb/Cw5Gytde31-DiNC5RdUhIc9y8hc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/30-Day-No-Sugar-Low-Cholesterol-Meal-Plan-for-Beginners-743864c472fd4a088ed33ee3da6e7a9d.jpg"
           width={500}
@@ -111,12 +111,13 @@ export default function Meals({ meals }: { meals: string }) {
           <li>Vegetables</li>
         </ul>
         <h2 className={SubTitleStyle}>Day 1</h2>
+        {/* Day 1 */}
         <div className="">
           <Image
             src="https://www.eatingwell.com/thmb/3YbpzdUovSBmut5mlmQMOT6sW7w=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/loaded-cucumber-and-avocado-sandwich-e8edb61dcc8044e28cfa835ad4282719.jpg"
             width={500}
             height={500}
-            className="object-cover w-full h-full"
+            className="object-cover w-full h-full m-auto"
             alt="30-Day No-Sugar, Low-Cholesterol Meal Plan for Beginners, Created by a Dietitian"
           />
         </div>
@@ -156,7 +157,311 @@ export default function Meals({ meals }: { meals: string }) {
           Add ¼ cup dry-roasted unsalted almonds to A.M. snack and add 1 medium
           banana with 1 ½ Tbsp. natural peanut butter as an evening snack.
         </p>
+      {/* Day 2 */}
+      <h2 className={SubTitleStyle}>Day 2</h2>
+      <div className="">
+          <Image
+            src="https://www.eatingwell.com/thmb/fcyrmz5wOiS1ebyyFFyY-QVTEMI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/7221547-64721a457f94445e9d5f80c735df4af6.jpg"
+            width={500}
+            height={500}
+            className="object-cover w-full h-full"
+            alt="30-Day No-Sugar, Low-Cholesterol Meal Plan for Beginners, Created by a Dietitian"
+          />
+        </div>
+        <h2 className={SubTitleStyle}>Breakfast (318 calories)</h2>
+        <ul className={ListStyle}>
+          <li>1 serving Quinoa & Chia Oatmeal Mix, prepared with water</li>
+          <li>2 Tbsp. chopped walnuts</li>
+          <li>½ cup sliced strawberries</li>
+        </ul>
+        <h2 className={SubTitleStyle}>A.M. Snack (141 calories)</h2>
+        <ul className={ListStyle}>
+          <li>2 servings Peanut Butter-Oat Energy Balls</li>
+        </ul>
+        <h2 className={SubTitleStyle}>Lunch Snack (360  calories)</h2>
+        <ul className={ListStyle}>
+          <li>1 serving Chicken Fajita Bowls </li>
+          <li>1 clementine</li>
+        </ul>
+        <h2 className={SubTitleStyle}>P.M. Snack (126 calories)</h2>
+        <ul className={ListStyle}>
+          <li>1 serving Smoky Collards & Shrimp with Cheesy Grits</li>
+        </ul>
+        <h2 className={SubTitleStyle}>Dinner (566 calories)</h2>
+        <ul className={ListStyle}>
+          <li>1 serving Chicken Parmesan & Quinoa Stuffed Peppers</li>
+        </ul>
+        <p className={ParagraphStyle}>
+          <strong>Daily Totals: </strong>
+          1,512 calories, 52g fat, 96g protein, 175g carbohydrate, 
+          32g fiber, 1,399mg sodium
+        </p>
+        <p className={ParagraphStyle}>
+          <strong>Make it 1,200 calories: </strong>
+          Omit walnuts at breakfast, change A.M. snack to ½ cup 
+          blueberries and omit yogurt at P.M. snack.
+        </p>
+        <p className={ParagraphStyle}>
+          <strong>Make it 2,000 calories </strong>
+          Increase to 4 energy balls at A.M. snack, add 3 Tbsp. 
+          chopped walnuts to P.M. snack and add 1 serving Caprese 
+          Salad with Cherry Tomatoes to dinner.
+        </p>
+      {/* Day 3 */}
+      <h2 className={SubTitleStyle}>Day 3</h2>
+      <div className="">
+          <Image
+            src="https://www.eatingwell.com/thmb/mOM1wjzdBhfL97Zqop8Gr3VvxYw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/EWL-Sun-Dried-Tomato--Feta-Egg-Bites-BG-Hero-3x2-32513-e3a31bac8563493bb5f435d12b1a896d.jpg"
+            width={500}
+            height={500}
+            className="object-cover w-full h-full"
+            alt="30-Day No-Sugar, Low-Cholesterol Meal Plan for Beginners, Created by a Dietitian"
+          />
+        </div>
+        <h2 className={SubTitleStyle}>Breakfast (387 calories)</h2>
+        <ul className={ListStyle}>
+          <li>1 serving Sun-Dried Tomato & Feta Egg Bites</li>
+          <li>1 medium apple</li>
+          <li>1 cup low-fat plain kefir</li>
+        </ul>
+        <h2 className={SubTitleStyle}>A.M. Snack (131 calories)</h2>
+        <ul className={ListStyle}>
+          <li>1 large pear</li>
+        </ul>
+        <h2 className={SubTitleStyle}>Lunch(325 calories)</h2>
+        <ul className={ListStyle}>
+          <li>1 serving Chicken Fajita Bowls </li>
+        </ul>
+        <h2 className={SubTitleStyle}>P.M. Snack (267 calories)</h2>
+        <ul className={ListStyle}>
+          <li>1 (5.3-oz.) container low-fat plain strained (Greek-style) yogurt</li>
+          <li>¼ cup raspberries</li>
+          <li>2 servings Peanut Butter-Oat Energy Balls</li>
+        </ul>
+        <h2 className={SubTitleStyle}>Dinner (404 calories)</h2>
+        <ul className={ListStyle}>
+          <li>1 serving Grilled Pork Tenderloin with Cherries</li>
+          <li>1 serving Roasted Garlic Butter Potatoes</li>
+        </ul>
+        <p className={ParagraphStyle}>
+          <strong>Daily Totals: </strong>
+          1,514 calories, 51g fat, 89g protein, 186g carbohydrate, 
+          31g fiber, 2,080mg sodium
+        </p>
+        <p className={ParagraphStyle}>
+          <strong>Make it 1,200 calories: </strong>
+          Omit apple at breakfast, change A.M. snack to 1 plum and 
+          omit yogurt at P.M. snack.
+        </p>
+        <p className={ParagraphStyle}>
+          <strong>Make it 2,000 calories </strong>
+          Add ¼ cup dry-roasted unsalted almonds to A.M. snack, increase 
+          to 3 servings Peanut Butter-Oat Energy Balls at P.M. snack and 
+          add 1 serving Massaged Kale Salad to dinner.
+        </p>
+      {/* Day 4 */}
+      <h2 className={SubTitleStyle}>Day 4</h2>
+      <div className="">
+          <Image
+            src="https://www.eatingwell.com/thmb/_9wLRp8pFxtuzlYpeR7oRXdmJnU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/8059139-75595bc1384443aca9cbd6f2197b2968.jpg"
+            width={500}
+            height={500}
+            className="object-cover w-full h-full"
+            alt="30-Day No-Sugar, Low-Cholesterol Meal Plan for Beginners, Created by a Dietitian"
+          />
+        </div>
+        <h2 className={SubTitleStyle}>Breakfast (318 calories)</h2>
+        <ul className={ListStyle}>
+          <li>1 serving Quinoa & Chia Oatmeal Mix, prepared with water</li>
+          <li>2 Tbsp. chopped walnuts</li>
+          <li>½ cup sliced strawberries</li>
+        </ul>
+        <h2 className={SubTitleStyle}>A.M. Snack(212 calories)</h2>
+        <ul className={ListStyle}>
+          <li>3 servings Peanut Butter-Oat Energy Balls</li>
+        </ul>
+        <h2 className={SubTitleStyle}>Lunch(325 calories)</h2>
+        <ul className={ListStyle}>
+          <li>1 serving Chicken Fajita Bowls</li>
+        </ul>
+        <h2 className={SubTitleStyle}>P.M. Snack (126 calories)</h2>
+        <ul className={ListStyle}>
+          <li>1 (5.3-oz.) container low-fat plain strained (Greek-style) yogurt</li>
+          <li>¼ cup raspberries</li>
+        </ul>
+        <h2 className={SubTitleStyle}>Dinner (520 calories)</h2>
+        <ul className={ListStyle}>
+          <li>1 serving Grilled Chicken with Red Pepper-Pecan Romesco Sauce</li>
+          <li>1 serving Whole-Wheat Couscous with Parmesan & Peas</li>
+        </ul>
+        <p className={ParagraphStyle}>
+          <strong>Daily Totals: </strong>
+          1,501 calories, 60g fat, 85g protein, 170g carbohydrate, 
+          34g fiber, 1,798mg sodium
+        </p>
+        <p className={ParagraphStyle}>
+          <strong>Make it 1,200 calories: </strong>
+          Omit yogurt at P.M. snack and substitute 1 cup steamed green 
+          beans for the couscous at dinner. 
+        </p>
+        <p className={ParagraphStyle}>
+          <strong>Make it 2,000 calories </strong>
+          Increase to ¼ cup chopped walnuts at breakfast, add 1 cup 
+          low-fat plain kefir to A.M. snack, 1 medium apple to lunch 
+          and ¼ cup dry-roasted unsalted almonds to P.M. snack.
+        </p>
+      {/* Day 5 */}
+      <h2 className={SubTitleStyle}>Day 5</h2>
+      <div className="">
+          <Image
+            src="https://www.eatingwell.com/thmb/uS39RhP_QkhZg8gwOGv8qajlJo8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Salmon-Orzo-Casserole-with-Lemon-Dill-1x1-5055-2000-6e697a6491334d4388df2381ff2702ce.jpg"
+            width={500}
+            height={500}
+            className="object-cover w-full h-full"
+            alt="30-Day No-Sugar, Low-Cholesterol Meal Plan for Beginners, Created by a Dietitian"
+          />
+        </div>
+        <h2 className={SubTitleStyle}>Breakfast (387 calories)</h2>
+        <ul className={ListStyle}>
+          <li>1 serving Sun-Dried Tomato & Feta Egg Bites </li>
+          <li>1 medium apple</li>
+          <li>1 cup low-fat plain kefir</li>
+        </ul>
+        <h2 className={SubTitleStyle}>A.M. Snack(212 calories)</h2>
+        <ul className={ListStyle}>
+          <li>3 servings Peanut Butter-Oat Energy Balls</li>
+        </ul>
+        <h2 className={SubTitleStyle}>Lunch(384 calories)</h2>
+        <ul className={ListStyle}>
+          <li>1 serving Chicken Fajita Bowls</li>
+          <li>1 medium peach</li>
+        </ul>
+        <h2 className={SubTitleStyle}>P.M. Snack (126 calories)</h2>
+        <ul className={ListStyle}>
+          <li>1 (5.3-oz.) container low-fat plain strained (Greek-style) yogurt</li>
+          <li>¼ cup raspberries</li>
+        </ul>
+        <h2 className={SubTitleStyle}>Dinner (391 calories)</h2>
+        <ul className={ListStyle}>
+          <li>1 serving Anti-Inflammatory Lemony Salmon & Orzo Casserole</li>
+        </ul>
+        <p className={ParagraphStyle}>
+          <strong>Daily Totals: </strong>
+          1,499 calories, 53g fat, 90g protein, 176g carbohydrate, 
+          32g fiber, 1,987mg sodium
+        </p>
+        <p className={ParagraphStyle}>
+          <strong>Make it 1,200 calories: </strong>
+          Omit apple at breakfast and change A.M. snack to 1 plum.
+        </p>
+        <p className={ParagraphStyle}>
+          <strong>Make it 2,000 calories </strong>
+          Add ¼ cup dry-roasted unsalted almonds to A.M. snack, 
+          2 Tbsp. chopped walnuts to P.M. snack and 1 serving 
+          Traditional Greek Salad to dinner.
+        </p>
+      {/* Day 6 */}
+      <h2 className={SubTitleStyle}>Day 6</h2>
+      <div className="">
+          <Image
+            src="https://www.eatingwell.com/thmb/X6-rMyjhGzIBmo3R8NG92pbqCdY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GrilledSteakSaladwithCornCucumbersandGrilledSweetOnionDressing-RM-7302-ff2a58942e3e4ae0b6b623f63fc8e95f.jpg"
+            width={500}
+            height={500}
+            className="object-cover w-full h-full"
+            alt="30-Day No-Sugar, Low-Cholesterol Meal Plan for Beginners, Created by a Dietitian"
+          />
+        </div>
+        <h2 className={SubTitleStyle}>Breakfast (387 calories)</h2>
+        <ul className={ListStyle}>
+          <li>1 serving Sun-Dried Tomato & Feta Egg Bites </li>
+          <li>1 medium apple</li>
+          <li>1 cup low-fat plain kefir</li>
+        </ul>
+        <h2 className={SubTitleStyle}>A.M. Snack(212 calories)</h2>
+        <ul className={ListStyle}>
+          <li>3 servings Peanut Butter-Oat Energy Balls</li>
+        </ul>
+        <h2 className={SubTitleStyle}>Lunch(384 calories)</h2>
+        <ul className={ListStyle}>
+          <li>1 serving Chicken Fajita Bowls</li>
+          <li>1 medium peach</li>
+        </ul>
+        <h2 className={SubTitleStyle}>P.M. Snack (126 calories)</h2>
+        <ul className={ListStyle}>
+          <li>1 (5.3-oz.) container low-fat plain strained (Greek-style) yogurt</li>
+          <li>¼ cup raspberries</li>
+        </ul>
+        <h2 className={SubTitleStyle}>Dinner (391 calories)</h2>
+        <ul className={ListStyle}>
+          <li>1 serving Anti-Inflammatory Lemony Salmon & Orzo Casserole</li>
+        </ul>
+        <p className={ParagraphStyle}>
+          <strong>Daily Totals: </strong>
+          1,499 calories, 53g fat, 90g protein, 176g carbohydrate, 
+          32g fiber, 1,987mg sodium
+        </p>
+        <p className={ParagraphStyle}>
+          <strong>Make it 1,200 calories: </strong>
+          Omit apple at breakfast and change A.M. snack to 1 plum.
+        </p>
+        <p className={ParagraphStyle}>
+          <strong>Make it 2,000 calories </strong>
+          Add ¼ cup dry-roasted unsalted almonds to A.M. snack, 
+          2 Tbsp. chopped walnuts to P.M. snack and 1 serving 
+          Traditional Greek Salad to dinner.
+        </p>
+      {/* Day 7 */}
+      <h2 className={SubTitleStyle}>Day 7</h2>
+      <div className="">
+          <Image
+            src="https://www.eatingwell.com/thmb/eZtW98DFY5agO2rWOSHciI3isjM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/halibut-fish-tacos-with-cilantro-slaw-1904-8031932-2000-3388a3b269d644e396663664dbd9d392-d30e2434104447c1bc7aa9c6de8fdf58.jpg"
+            width={500}
+            height={500}
+            className="object-cover w-full h-full"
+            alt="30-Day No-Sugar, Low-Cholesterol Meal Plan for Beginners, Created by a Dietitian"
+          />
+        </div>
+        <h2 className={SubTitleStyle}>Breakfast (387 calories)</h2>
+        <ul className={ListStyle}>
+          <li>1 serving Sun-Dried Tomato & Feta Egg Bites </li>
+          <li>1 medium apple</li>
+          <li>1 cup low-fat plain kefir</li>
+        </ul>
+        <h2 className={SubTitleStyle}>A.M. Snack(131 calories)</h2>
+        <ul className={ListStyle}>
+          <li>1 large pear</li>
+        </ul>
+        <h2 className={SubTitleStyle}>Lunch(391 calories)</h2>
+        <ul className={ListStyle}>
+          <li>1 serving Anti-Inflammatory Lemony Salmon & Orzo Casserole</li>
+        </ul>
+        <h2 className={SubTitleStyle}>P.M. Snack (42 calories)</h2>
+        <ul className={ListStyle}>
+          <li>½ cup blueberries</li>
+        </ul>
+        <h2 className={SubTitleStyle}>Dinner (555 calories)</h2>
+        <ul className={ListStyle}>
+          <li>1 serving Seared Halibut Fish Tacos with Cilantro Slaw</li>
+          <li>1 serving Slow-Cooker Cuban-Style Black Beans</li>
+        </ul>
+        <p className={ParagraphStyle}>
+          <strong>Daily Totals: </strong>
+          1,505 calories, 51g fat, 84g protein, 188g carbohydrate, 
+          32g fiber, 2,276mg sodium
+        </p>
+        <p className={ParagraphStyle}>
+          <strong>Make it 1,200 calories: </strong>
+          Omit kefir at breakfast and omit Slow-Cooker Cuban-Style 
+          Black Beans at dinner. 
+        </p>
+        <p className={ParagraphStyle}>
+          <strong>Make it 2,000 calories </strong>
+          Add ¼ cup dry-roasted unsalted almonds to A.M. snack and 
+          add ¾ cup low-fat plain strained (Greek-style yogurt) and 
+          2 servings Peanut Butter-Oat Energy Balls to P.M. snack.
+        </p>
       </div>
+     
     </>
   );
 }
