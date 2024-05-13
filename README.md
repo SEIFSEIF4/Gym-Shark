@@ -6,7 +6,7 @@ Thank you for visiting the Gym Shark repository! This project aims to provide a 
 
 Gym Shark is a comprehensive fitness management system designed to streamline your workout routines and help you achieve your fitness goals. With features like workout tracking, progress visualization, and goal setting, Gym Shark empowers users to take control of their fitness journey and stay motivated along the way.
 
-![Gym Shark Screenshot](https://raw.githubusercontent.com/SEIFSEIF4/Gym-Shark/master/public/screen.png)
+![Gym Shark Screenshot](https://raw.githubusercontent.com/SEIFSEIF4/Gym-Shark/master/public/screen.png?token=GHSAT0AAAAAACR3AYBIPW6TDADPIPCVBJBAZSCN5RA)
 
 ## Features
 
