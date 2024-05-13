@@ -1,7 +1,6 @@
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { Menu } from "lucide-react";
-import { ModeToggle } from "./ui/mode-toggle";
+import { ModeToggle } from "@/components/ui/mode-toggle";
 import {
   Sheet,
   SheetContent,
@@ -29,7 +28,10 @@ export default async function MainNavbar() {
           <div className="flex items-center gap-5 h-12 sm:h-20 md:h-24">
             <ModeToggle />
             <Sheet>
-              <SheetTrigger className="max-w-[40px] max-h-[40px] p-[5px] border-1 rounded-md">
+              <SheetTrigger
+                aria-labelledby="openSheetLabel"
+                className="max-w-[40px] max-h-[40px] p-[5px] border-1 rounded-md"
+              >
                 <Menu />
               </SheetTrigger>
               <SheetContent className="max-w-[250px]">

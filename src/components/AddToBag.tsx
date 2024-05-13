@@ -30,6 +30,7 @@ export default function AddToBag({
     price: price,
     currency: currency,
     image: image,
+    sku: "",
   };
   return (
     <Button
@@ -39,7 +40,7 @@ export default function AddToBag({
           navigateLogin();
         } else {
           toast.success(`Added ${product.name} to cart.`);
-          addItem({ ...product, sku: "your_sku_value" }), handleCartClick();
+          addItem(product), handleCartClick();
         }
       }}
     >

@@ -7,7 +7,6 @@ import IFrame from "./IFrame";
 export default function CardioExercises() {
   const pathname = usePathname();
   const data = Exercises.filter((item) => item.url === pathname);
-  console.log(data);
 
   return (
     <>

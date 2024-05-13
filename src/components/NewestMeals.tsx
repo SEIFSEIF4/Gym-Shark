@@ -42,7 +42,9 @@ export default async function NewestMeals() {
 
                 <div className="mt-4 flex justify-between">
                   <div>
-                    <h3 className="text-sm text-foreground">{meal.description}</h3>
+                    <h3 className="text-sm text-foreground">
+                      {meal.description}
+                    </h3>
                   </div>
                 </div>
               </div>

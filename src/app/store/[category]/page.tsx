@@ -49,7 +49,9 @@ export default async function CategoryPage({
 
                   <div className="mt-4 flex justify-between">
                     <div>
-                      <h3 className="text-sm text-foreground">{product.name}</h3>
+                      <h3 className="text-sm text-foreground">
+                        {product.name}
+                      </h3>
                       <p className="mt-1 text-sm text-gray-400">
                         {product.categoryName}
                       </p>
