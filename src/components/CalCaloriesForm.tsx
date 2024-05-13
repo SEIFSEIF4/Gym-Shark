@@ -157,13 +157,21 @@ export default function CalCaloriesForm() {
                         >
                           <FormItem className="flex items-center space-x-3 space-y-0">
                             <FormControl>
-                              <RadioGroupItem value="male" />
+                              <RadioGroupItem
+                                aria-labelledby="male"
+                                aria-label="male"
+                                value="male"
+                              />
                             </FormControl>
                             <FormLabel className="font-normal">Male</FormLabel>
                           </FormItem>
                           <FormItem className="flex items-center space-x-3 space-y-0">
                             <FormControl>
-                              <RadioGroupItem value="female" />
+                              <RadioGroupItem
+                                aria-labelledby="female"
+                                aria-label="female"
+                                value="female"
+                              />
                             </FormControl>
                             <FormLabel className="font-normal">
                               Female
