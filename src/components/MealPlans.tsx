@@ -8,7 +8,16 @@ export default function MealPlans() {
     <div className="gap-5 grid grid-cols-1  md:grid-cols-2  lg:grid-cols-3 2xl:grid-cols-5 p-20 ">
       {Meals.map((item, index) => (
         <Link href={`/meals-plan/${item.title}`} key={index}>
-          <Card shadow="md" key={index} isPressable>
+          <Card
+            shadow="md"
+            key={index}
+            isPressable
+            className={`hover:opacity-75 hover:text-primary duration-500 animate-in animate fade-in-5 slide-in-from-bottom-2.5 ${
+              index % 2 === 0
+                ? "animate-in animate fade-in-5 slide-in-from-left-2.5"
+                : "animate-in animate fade-in-5 slide-in-from-right-2.5"
+            }`}
+          >
             <CardBody className="overflow-visible p-0">
               <Image
                 shadow="sm"

@@ -1,10 +1,13 @@
-import AddToBag from "@/components/AddToBag";
+import Image from "next/image";
+import { Star, Truck } from "lucide-react";
+
 import CheckoutNow from "@/components/CheckoutNow";
 import ImageGallery from "@/components/ImageGallery";
 import { Button } from "@/components/ui/button";
-import { Star, Truck } from "lucide-react";
 import { MainProducts } from "@/data/main-products";
 import Navbar from "@/components/Navbar";
+import AddToBag from "@/components/AddToBag";
+import { redirect } from "next/dist/server/api-utils";
 
 export default async function ProductPage({
   params,
@@ -19,7 +22,19 @@ export default async function ProductPage({
     <>
       <Navbar />
       {data === undefined ? (
-        <div className="text-9xl text-center">no data</div>
+        <div className="text-9xl text-center min-h-[80vh] flex justify-center items-center">
+          <div className="flex flex-col justify-center items-center">
+            <Image
+              src={
+                "https://cdni.iconscout.com/illustration/premium/thumb/no-data-found-8867280-7265556.png?f=webp"
+              }
+              width={500}
+              height={500}
+              alt={"No data found"}
+            />
+            <h1>NO DATA FOUND</h1>
+          </div>
+        </div>
       ) : (
         <div className="bg-card">
           <div className="mx-auto max-w-screen-xl px-4 md:px-8">
@@ -38,9 +53,7 @@ export default async function ProductPage({
                 <div className="mb-6 flex items-center gap-3 md:mb-10">
                   <Button className="rounded-full gap-x-2 ">
                     <span className="text-sm">{data.rate}</span>
-                    <Star
-                      className="h-5 w-5 text-yellow-500 stroke-yellow-500"
-                    />
+                    <Star className="h-5 w-5 text-yellow-500 stroke-yellow-500" />
                   </Button>
 
                   <span className="text-sm text-gray-400 transition duration-100">
@@ -75,6 +88,7 @@ export default async function ProductPage({
                     price={data.price}
                     key={data._id}
                   />
+
                   <CheckoutNow
                     currency="TL"
                     description={data.description}

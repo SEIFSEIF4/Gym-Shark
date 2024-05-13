@@ -37,8 +37,14 @@ export function UserDropdown({ userImage }: iAppProps) {
       </DropdownMenuTrigger>
 
       <DropdownMenuContent align="end" className="w-[200px]">
-        <DropdownMenuItem className="w-full">
+        <DropdownMenuItem className="w-full py-0">
           <NavModeToggle />
+        </DropdownMenuItem>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem>
+          <Link className="w-full" href="/">
+            Home
+          </Link>
         </DropdownMenuItem>
         <DropdownMenuItem>
           <Link className="w-full" href="/cardio">
@@ -52,7 +58,7 @@ export function UserDropdown({ userImage }: iAppProps) {
         </DropdownMenuItem>
         <DropdownMenuSeparator />
         <DropdownMenuItem>
-          <LogoutLink className="w-full">Logout</LogoutLink>
+          <LogoutLink className="w-full hover:text-red-500">Logout</LogoutLink>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

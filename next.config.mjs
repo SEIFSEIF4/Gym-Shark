@@ -12,6 +12,7 @@ const nextConfig = {
       "cdn.dsmcdn.com",
       "productimages.hepsiburada.net",
       "www.eatingwell.com",
+      "cdni.iconscout.com",
     ], // Add the hostnames here
   },
 };
