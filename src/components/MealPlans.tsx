@@ -5,7 +5,7 @@ import { Meals } from "@/data/meals-plan";
 import Link from "next/link";
 export default function MealPlans() {
   return (
-    <div className="gap-5 grid grid-cols-1  md:grid-cols-2  lg:grid-cols-3 2xl:grid-cols-5 p-20 ">
+    <div className="gap-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5 p-12 md:px-20 py-5">
       {Meals.map((item, index) => (
         <Link href={`/meals-plan/meal`} key={index}>
           <Card

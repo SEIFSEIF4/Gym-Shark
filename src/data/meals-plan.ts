@@ -49,26 +49,26 @@ export const Meals = [
   },
   {
     title:
-      "7-Day Gut-Healthy Anti-Inflammatory Meal Plan, Created by a Dietitian",
-    img: "https://www.eatingwell.com/thmb/c5NMIr1Jh1MW1hPb-gBZ-_YyNHQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/7-Day-Gut-Healthy-Anti-Inflammatory-Meal-Plan-Created-by-a-Dietitian-b2ab0c12ca364b86805a71b44f87ae2e.jpg",
-    description: "High-Fiber Meal Plans",
+      "7-Day No-Sugar Anti-Inflammatory Meal Plan for Metabolic Syndrome, Created by a Dietitian",
+    img: "https://www.eatingwell.com/thmb/lumE3XtBGyzhcP0ua1RYerw_16g=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/7-Day-No-Sugar-Anti-inflammatory-Meal-Plan-for-Metabolic-Syndrome-3f56bb19ca1a4e7da3b6d789191b0db5.jpg",
+    description: "Diabetes Meal Plans",
   },
   {
     title:
-      "7-Day Gut-Healthy Anti-Inflammatory Meal Plan, Created by a Dietitian",
-    img: "https://www.eatingwell.com/thmb/c5NMIr1Jh1MW1hPb-gBZ-_YyNHQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/7-Day-Gut-Healthy-Anti-Inflammatory-Meal-Plan-Created-by-a-Dietitian-b2ab0c12ca364b86805a71b44f87ae2e.jpg",
-    description: "High-Fiber Meal Plans",
+      "31-Day Spring Lunch Plan Ready in 15 Minutes or Less",
+    img: "https://www.eatingwell.com/thmb/FpTHkeQTmHuCUheXvEsluxN-HZU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/These-Are-the-Best-and-Worst-Diets-of-2024-According-to-U.S.-News-and-World-Report-ad90d239a5494df09aaf0850c9f78c09.jpg",
+    description: "Health, Quick & Easy Lunch Recipes",
   },
   {
     title:
-      "7-Day Gut-Healthy Anti-Inflammatory Meal Plan, Created by a Dietitian",
-    img: "https://www.eatingwell.com/thmb/c5NMIr1Jh1MW1hPb-gBZ-_YyNHQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/7-Day-Gut-Healthy-Anti-Inflammatory-Meal-Plan-Created-by-a-Dietitian-b2ab0c12ca364b86805a71b44f87ae2e.jpg",
-    description: "High-Fiber Meal Plans",
+      "7-Day Mediterranean Diet Meal Plan for a Healthy Gut, Created by a Dietitian",
+    img: "https://www.eatingwell.com/thmb/FcHCxn7kJC7mT-2_BqazVxXvUY0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/7-Day-Mediterranean-Diet-Meal-Plan-to-Improve-Your-Gut-Health-fff230c868454a93876c9834a109df97.jpg",
+    description: "Mediterranean Diet Meal Plans",
   },
   {
     title:
-      "7-Day Gut-Healthy Anti-Inflammatory Meal Plan, Created by a Dietitian",
-    img: "https://www.eatingwell.com/thmb/c5NMIr1Jh1MW1hPb-gBZ-_YyNHQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/7-Day-Gut-Healthy-Anti-Inflammatory-Meal-Plan-Created-by-a-Dietitian-b2ab0c12ca364b86805a71b44f87ae2e.jpg",
-    description: "High-Fiber Meal Plans",
+      "7-Day No-Sugar, High-Protein Meal Plan for High Blood Pressure, Created by a Dietitian",
+    img: "https://www.eatingwell.com/thmb/m_ldVvKwAKmIyscTABoMMkM9pq8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/7-Day-No-Sugar-High-Protein-Meal-Plan-for-High-Blood-Pressure-Created-by-a-Dietitian-539e44556cb54549bb505eaf4413de41.jpg",
+    description: "Blood Pressure Meal Plans",
   },
 ];

@@ -9,7 +9,7 @@ export default async function Newest() {
 
   return (
     <div className="bg-card-500">
-      <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+      <div className="mx-auto max-w-2xl p-12 lg:max-w-7xl">
         <div className="flex justify-between items-center">
           <h2 className="text-2xl font-bold tracking-tight text-foreground">
             Our Newest Products

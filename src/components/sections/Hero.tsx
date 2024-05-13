@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <>
       {/* Hero */}
-      <div className="relative overflow-hidden pb-24 lg:py-32 duration-500 animate-in animate fade-in-5 slide-in-from-bottom-2.5">
+      <div className="relative overflow-hidden pb-2 md:pb-24 lg:py-32 duration-500 animate-in animate fade-in-5 slide-in-from-bottom-2.5">
         {/* Gradients */}
         <Image
           src="https://muffingroup.com/blog/wp-content/uploads/2022/09/victor-freitas-WvDYdXDzkhs-unsplash.png"
@@ -30,13 +30,13 @@ export default function Hero() {
               <p className="">Discover Our Premium Gym Experience</p>
               {/* Title */}
               <div className="mt-5 max-w-3xl">
-                <h1 className="scroll-m-20 text-4xl font-extrabold text-white tracking-tight lg:text-5xl">
+                <h1 className="scroll-m-20 text-2xl md:text-4xl font-extrabold text-white tracking-tight lg:text-5xl">
                   Transform Your Fitness Journey
                 </h1>
               </div>
               {/* End Title */}
               <div className="mt-5 max-w-3xl">
-                <p className="text-xl text-muted-foreground">
+                <p className="hidden md:block text-xl text-muted-foreground">
                   Explore a range of cutting-edge fitness solutions designed to
                   elevate your workouts and help you achieve your health and
                   wellness goals

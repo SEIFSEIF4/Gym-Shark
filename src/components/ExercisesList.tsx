@@ -15,13 +15,13 @@ export default function ExercisesList() {
             <li
               key={index}
               className={`text-md md:text-lg ${
-                pathname === item.url ? "text-white" : ""
+                pathname === item.url ? "text-foreground" : ""
               }`}
             >
               <Link
                 href={item.url}
                 className={`text-primary ${
-                  pathname === item.url ? "text-white" : ""
+                  pathname === item.url ? "text-foreground" : ""
                 }`}
               >
                 {item.exName}

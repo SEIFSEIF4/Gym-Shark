@@ -11,7 +11,7 @@ export default function Meals({ meals }: { meals: string }) {
   return (
     <>
       <MainNavbar />
-      <div className="p-5 max-w-[50vh] sm:max-w-[70vh] md:max-w-[90vh] lg:max-w-[150vh]  m-auto">
+      <div className="p-5 max-w-[70vh] sm:max-w-[80vh] lg:max-w-[100vh] xl:max-w-[120vh] m-auto items-center">
         <h1 className="text-3xl font-bold lg:text-5xl py-3 ">
           7-Day No-Sugar, High-Fiber & High-Protein Meal Plan, Created by a
           Dietitian
@@ -27,7 +27,7 @@ export default function Meals({ meals }: { meals: string }) {
           Haddad-Garcia
         </p>
       </div>
-      <div className="bg-card border-1 border-gray-500 flex-col max-w-[50vh] sm:max-w-[70vh] md:max-w-[90vh] lg:max-w-[100vh] xl:max-w-[120vh] flex justify-start items-start m-auto min-h-screen p-3">
+      <div className="bg-card flex-col max-w-[70vh] sm:max-w-[80vh] lg:max-w-[100vh] xl:max-w-[120vh] flex justify-start items-start m-auto min-h-screen p-5 pt-3">
         <Image
           src="https://www.eatingwell.com/thmb/Cw5Gytde31-DiNC5RdUhIc9y8hc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/30-Day-No-Sugar-Low-Cholesterol-Meal-Plan-for-Beginners-743864c472fd4a088ed33ee3da6e7a9d.jpg"
           width={500}

@@ -26,7 +26,7 @@ export default function InfoCard({
 }: InfoCardProps) {
   return (
     <div>
-      <Card className="w-[450px] md:min-h-[500px]">
+      <Card className="w-[350px] sm:w-[450px] md:w-[375px] lg:w-[480px] sm:min-h-[520px]">
         <CardHeader>
           <CardTitle>Your Result</CardTitle>
           <CardDescription>
@@ -67,7 +67,7 @@ export default function InfoCard({
           </div>
         </CardContent>
         <CardFooter className="w-4/5 m-auto">
-          <Button variant="link" asChild className="p-0 hover:text-white">
+          <Button variant="link" asChild className="p-0 hover:text-foreground">
             <Link href="/cardio">Try Our Cardio Exercises</Link>
           </Button>
         </CardFooter>

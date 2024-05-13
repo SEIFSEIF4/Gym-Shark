@@ -10,7 +10,7 @@ export default function Cardio() {
     <>
       <MainNavbar />
       <CardioExercisesHeader />
-      <div className="gap-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-20">
+      <div className="gap-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 px-12 my-5 lg:px-40 xl:px-48">
         {Exercises.map((item, index) => (
           <Link href={item.url} key={index}>
             <Card
@@ -30,7 +30,7 @@ export default function Cardio() {
                       radius="lg"
                       width="100%"
                       alt={item.exName}
-                      className="w-full object-none object-center md:object-cover h-[200px]"
+                      className="w-full object-none object-center sm:object-cover h-[200px]"
                       src={item.thumbnail}
                     />
                   </div>

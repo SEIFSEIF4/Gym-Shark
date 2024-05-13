@@ -9,7 +9,7 @@ export default async function NewestMeals() {
 
   return (
     <div className="bg-card-500">
-      <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div className="mx-auto max-w-2xl p-12 lg:pt-0 lg:max-w-7xl">
         <div className="flex justify-between items-center">
           <h2 className="text-2xl font-bold tracking-tight text-foreground">
             Check out or Meal Plans
@@ -28,8 +28,7 @@ export default async function NewestMeals() {
 
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 ">
           {data.map((meal:any) => (
-            // href={`store/product/${product.slug}`} key={product._id}
-            <Link href={""}>
+            <Link href={"/meals-plan"}>
               <div className="group relative hover:opacity-75">
                 <div className="aspect-square w-full overflow-hidden rounded-md bg-foreground-200  lg:h-80 border-1 border-gray-500 shadow-lg">
                   <Image

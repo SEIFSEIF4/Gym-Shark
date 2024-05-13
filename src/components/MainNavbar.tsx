@@ -19,7 +19,7 @@ export default async function MainNavbar() {
   return (
     <>
       <header className="border-b">
-        <div className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">
+        <div className="flex items-center justify-between mx-auto max-w-2xl p-3 sm:py-0 sm:px-6 lg:max-w-7xl">
           <Link href="/">
             <h1 className="text-2xl md:text-4xl font-bold">
               Gym<span className="text-primary">Shark</span>
