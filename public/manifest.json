@@ -3,6 +3,7 @@
   "name": "Gym Shark",
   "short_name": "Gym Shark",
   "description": "Gym Shark is a workout Website that helps you track your workouts and eating healthy food.",
+   "start_url": "https://github.com/SEIFSEIF4/Gym-Shark.git",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -94,14 +95,14 @@
       "label": "Scam Cards"
     },
     {
-      "src": "/screen.png",
+      "src": "/screen-light.png",
       "sizes": "1280x832",
       "type": "image/gif",
       "form_factor": "wide",
       "label": "Scam Cards"
     },
     {
-      "src": "/screen-light.png",
+      "src": "/screen.png",
       "sizes": "1280x832",
       "type": "image/gif",
       "form_factor": "wide",
