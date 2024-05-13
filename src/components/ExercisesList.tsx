@@ -20,9 +20,7 @@ export default function ExercisesList() {
             >
               <Link
                 href={item.url}
-                className={`text-primary ${
-                  pathname === item.url ? "text-foreground" : ""
-                }`}
+                className={`${pathname === item.url ? "text-foreground" : ""}`}
               >
                 {item.exName}
               </Link>
