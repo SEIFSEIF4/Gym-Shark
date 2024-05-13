@@ -2,7 +2,6 @@ import CardioExercises from "@/components/CardioExercises";
 import CardioExercisesHeader from "@/components/CardioExercisesHeader";
 import ExercisesList from "@/components/ExercisesList";
 import MainNavbar from "@/components/MainNavbar";
-import { ModeToggle } from "@/components/ui/mode-toggle";
 import React from "react";
 
 export default function SingleExercises({
@@ -13,8 +12,8 @@ export default function SingleExercises({
   return (
     <>
       <MainNavbar />
-      <div className="flex flex-col m-auto min-h-screen justify-center">
-        <div className="flex flex-col lg:flex-row gap-4 mt-5 m-16 p-3 items-center md:items-start">
+      <div className="flex flex-col m-auto min-h-screen justify-center bg-red-600">
+        <div className="flex flex-col lg:flex-row gap-4 mt-5 m-16 p-3 items-center md:items-start bg-slate-600 ">
           <ExercisesList />
           <CardioExercises />
         </div>
