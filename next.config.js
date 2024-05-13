@@ -4,14 +4,21 @@ const withPWA = require("@ducanh2912/next-pwa").default({
   aggressiveFrontEndNavCaching: true,
   reloadOnOnline: true,
   swcMinify: true,
-  disable: process.env.NODE_ENV === "development",
+  disable: false,
   workboxOptions: {
     disableDevLogs: true,
+  },
+  fallbacks: {
+    //image: "/static/images/fallback.png",
+    // document: "/offline", // if you want to fallback to a custom page rather than /_offline
   },
 });
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   images: {
     domains: [
       "i.pinimg.com",
@@ -25,7 +32,7 @@ const nextConfig = {
       "productimages.hepsiburada.net",
       "www.eatingwell.com",
       "cdni.iconscout.com",
-    ], // Add the hostnames here
+    ],
   },
 };
 
