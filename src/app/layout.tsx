@@ -14,6 +14,7 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
+  manifest: "/manifest.json",
   title: "Gym Shark",
   description:
     "Explore a range of cutting-edge fitness solutions designed to elevate your workouts and help you achieve your health and wellness goals",
