@@ -20,7 +20,7 @@ Gym Shark is a comprehensive fitness management system designed to streamline yo
 
 Gym Shark is built using modern web technologies to ensure a seamless user experience:
 
-- **Frontend**: HTML, CSS, TypeScript, React.js, Nextjs.
+- **Frontend**: TypeScript, React.js, Nextjs ,tailwind.
 - **OFFline**: OFFline Suppourt.
 - **PWA**: Suppourt PWA.
 - **Authentication**: Kide Auth.
