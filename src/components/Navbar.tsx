@@ -13,7 +13,7 @@ export default async function Navbar() {
   const user = await getUser();
   return (
     <header className="border-b min-h-16 sm:p-0 md:p-4 sm:px-5">
-      <div className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">
+      <div className="flex items-center justify-between mx-auto max-w-2xl py-4 sm:py-0 px-4 sm:px-6 lg:max-w-7xl">
         <Link href="/">
           <h1 className="text-2xl md:text-4xl font-bold">
             Gym<span className="text-primary">Shark</span>
