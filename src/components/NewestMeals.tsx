@@ -27,8 +27,8 @@ export default async function NewestMeals() {
         </div>
 
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 ">
-          {data.map((meal:any) => (
-            <Link href={"/meals-plan"}>
+          {data.map((meal: any, index) => (
+            <Link href={"/meals-plan"} key={index}>
               <div className="group relative hover:opacity-75">
                 <div className="aspect-square w-full overflow-hidden rounded-md bg-foreground-200  lg:h-80 border-1 border-gray-500 shadow-lg">
                   <Image
