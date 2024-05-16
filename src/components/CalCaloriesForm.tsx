@@ -1,5 +1,5 @@
 "use client";
-import React, { act, useState } from "react";
+import React, { useState } from "react";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Button } from "@/components/ui/button";
 import {
@@ -31,8 +31,8 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import Link from "next/link";
 import { activityLevel } from "@/lib/constants";
+import { on } from "events";
 
 const calcFormSchema = z.object({
   Age: z.preprocess(
@@ -76,14 +76,14 @@ type CalcFormSchema = z.infer<typeof calcFormSchema>;
 
 export default function CalCaloriesForm() {
   const defaultValues = {
-    Age: 0,
-    height: 0,
-    weight: 0,
+    Age: "" as unknown as number,
+    height: "" as unknown as number,
+    weight: "" as unknown as number,
   };
 
   const form = useForm<CalcFormSchema>({
     resolver: zodResolver(calcFormSchema),
-    // defaultValues,
+    defaultValues,
   });
 
   const onSubmit = (data: CalcFormSchema) => {
@@ -101,11 +101,17 @@ export default function CalCaloriesForm() {
     setResult(Math.round(bmr * activity));
   };
 
+  const onReset = () => {
+    form.reset();
+    setResult(0);
+  };
+
   const [Result, setResult] = useState<number>(0);
 
   return (
     <Form {...form}>
       <form
+        onReset={onReset}
         onSubmit={form.handleSubmit(onSubmit)}
         className="space-y-8 animate-appearance-in"
       >
@@ -286,7 +292,7 @@ export default function CalCaloriesForm() {
                 <Button type="submit" className="text-card">
                   Calculate
                 </Button>
-                <Button onClick={() => form.reset()} className=" bg-foreground">
+                <Button type="reset" className=" bg-foreground">
                   Clear
                 </Button>
               </div>
