@@ -108,8 +108,8 @@ export default async function ProductPage({
                 </div>
               </div>
             </div>
-            <Newest />
           </div>
+            <Newest />
         </>
       )}
     </>
