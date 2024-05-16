@@ -3,6 +3,7 @@ import Hero from "@/components/sections/Hero";
 import MainNavbar from "@/components/MainNavbar";
 import Newest from "@/components/Newest";
 import NewestMeals from "@/components/NewestMeals";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
       </div>
       <Newest />
       <NewestMeals />
-      
+      <Footer />
     </div>
   );
 }

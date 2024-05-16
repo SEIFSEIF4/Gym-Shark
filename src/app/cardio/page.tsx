@@ -4,6 +4,7 @@ import { Exercises } from "@/data/cardio-exercises";
 import MainNavbar from "@/components/MainNavbar";
 import Link from "next/link";
 import CardioExercisesHeader from "@/components/CardioExercisesHeader";
+import Footer from "@/components/Footer";
 
 export default function Cardio() {
   return (
@@ -43,6 +44,7 @@ export default function Cardio() {
           </Link>
         ))}
       </div>
+      <Footer />
     </>
   );
 }

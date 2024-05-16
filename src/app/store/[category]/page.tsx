@@ -1,7 +1,11 @@
 import Link from "next/link";
-import Image from "next/image";
+
 import { MainProducts } from "@/data/main-products";
+import Image from "next/image";
+
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+
 
 export const dynamic = "force-dynamic";
 
@@ -26,7 +30,7 @@ export default async function CategoryPage({
   return (
     <>
       <Navbar />
-      <div className="bg-card">
+      <div className="bg-card pb-5">
         <div className="mx-auto max-w-2xl px-4 sm:px-6  lg:max-w-7xl lg:px-8">
           <div className="flex justify-between items-center">
             <h2 className="text-2xl font-bold tracking-tight text-foreground mt-3">
@@ -66,6 +70,7 @@ export default async function CategoryPage({
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

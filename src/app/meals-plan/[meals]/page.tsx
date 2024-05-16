@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import MainNavbar from "@/components/MainNavbar";
 import { ShieldCheck } from "lucide-react";
+import Footer from "@/components/Footer";
 
 const SubTitleStyle = "text-xl font-bold py-3";
 const ParagraphStyle = "py-3";
@@ -27,7 +28,7 @@ export default function Meals({ meals }: { meals: string }) {
           Haddad-Garcia
         </p>
       </div>
-      <div className="bg-card flex-col max-w-[70vh] sm:max-w-[80vh] lg:max-w-[100vh] xl:max-w-[120vh] flex justify-start items-start m-auto min-h-screen p-5 pt-3">
+      <div className="bg-card flex-col max-w-[70vh] sm:max-w-[80vh] lg:max-w-[100vh] xl:max-w-[120vh] flex justify-start items-start m-auto min-h-screen p-5 pt-3 mb-5">
         <Image
           src="https://www.eatingwell.com/thmb/Cw5Gytde31-DiNC5RdUhIc9y8hc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/30-Day-No-Sugar-Low-Cholesterol-Meal-Plan-for-Beginners-743864c472fd4a088ed33ee3da6e7a9d.jpg"
           width={500}
@@ -467,6 +468,7 @@ export default function Meals({ meals }: { meals: string }) {
           Butter-Oat Energy Balls to P.M. snack.
         </p>
       </div>
+      <Footer />
     </>
   );
 }

@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Newest from "@/components/Newest";
 import Hero from "@/components/StoreHero";
@@ -9,6 +10,7 @@ export default function Store() {
       <Navbar />
       <Hero />
       <Newest />
+      <Footer />
     </div>
   );
 }

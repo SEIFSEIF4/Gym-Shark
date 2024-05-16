@@ -1,6 +1,7 @@
 import CardioExercises from "@/components/CardioExercises";
 import CardioExercisesHeader from "@/components/CardioExercisesHeader";
 import ExercisesList from "@/components/ExercisesList";
+import Footer from "@/components/Footer";
 import MainNavbar from "@/components/MainNavbar";
 import React from "react";
 
@@ -18,6 +19,7 @@ export default function SingleExercises({
           <CardioExercises />
         </div>
       </div>
+      <Footer />
     </>
   );
 }
